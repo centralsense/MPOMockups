@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://modern-po-staging.herokuapp.com/organizations/57/contacts/new -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbolinks-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}</style>
+
+
+
+
+
+    <link rel="stylesheet" media="all" href="./Contacts_New_files/application-d1fb81670c58de7f5b3cf85911ba55025a35721b3b1d0b6e38adb1f8003a0361.css" data-turbolinks-track="reload">
+    <script src="./Contacts_New_files/application-2f46945499ebb71e025b.js" data-turbolinks-track="reload"></script>
+
+
+  <title>Modern Purchase Order</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="kqGGBwaI32FUdWdbBs+UYmalsODKLdaKCHlyW85Gc+6qDL7KjVaQ9jcxnxHGzm/rrN/VYlZ6UcK9N8EzvMGchQ=="><link rel="icon" type="image/png" href="https://modern-po-staging.herokuapp.com/assets/favicon-16afc7069a527b6ad197481a92db4986127fb92d8de89131ff3088a5821997c1.png">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css" rel="stylesheet">
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white mb-sm-3 p-2 border-bottom">
+	<div class="container">
+    <a class="navbar-brand" href="https://modern-po-staging.herokuapp.com/">
+      <img class="img-fluid" style="width:30px" alt="Modern PO" src="./Contacts_New_files/po_logo-d353ddfe2274f140479aa862f46409bb0f290901312cbbfc6360528e0bdc6470.png">
+</a>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav nav">
+				<li class="nav-item pr-2">
+					<a class="nav-link " href="https://modern-po-staging.herokuapp.com/organizations/57/purchase_orders">Purchase Orders</a>
+				</li>
+				 <li class="nav-item pr-2">
+					 <a class="nav-link " href="https://modern-po-staging.herokuapp.com/organizations/57/quotes">Quotes</a>
+				 </li>
+				 <li class="nav-item pr-2">
+					 <a class="nav-link " href="https://modern-po-staging.herokuapp.com/organizations/57/items">Items</a>
+				 </li>
+			</ul>
+
+		<ul class="navbar-nav nav ml-auto">
+						<li class="nav-item pr-1">
+							<a class="btn btn-sm btn-white " href="https://modern-po-staging.herokuapp.com/organizations/57/invoices">
+								<i class="far fa-file-alt fa-lg fa-fw"></i>
+</a>						</li>
+						<li class="nav-item pr-1">
+							<a class="btn btn-sm btn-white " href="https://modern-po-staging.herokuapp.com/organizations/57/reports">
+								<i class="far fa-chart-bar fa-lg fa-fw"></i>
+</a>						</li>
+					<li class="nav-item dropdown">
+						<a class="btn btn-sm btn-white active" href="https://modern-po-staging.herokuapp.com/organizations/57/contacts/new##" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog fa-lg fa-fw"></i> &nbsp;<i class="fa fa-angle-down"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/organizations/57/settings">
+									<i class="fa fa-server fa-sm fa-fw"></i> System
+</a>								<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/organizations/57/users">
+									<i class="fa fa-users fa-sm fa-fw"></i> <span class="translation_missing" title="translation missing: en.links.users">Users</span>
+</a>								<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/organizations/57/contacts">
+									<i class="far fa-address-book fa-sm fa-fw"></i> Contacts
+</a>								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/organizations/57/budgets">
+									<i class="fas fa-project-diagram fa-sm fa-fw"></i> Departments
+</a>								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/organizations">
+									<i class="fa fas fa-users-cog fa-sm fa-fw"></i> <span class="translation_missing" title="translation missing: en.links.organizations">Organizations</span>
+</a>							<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/profile">
+								<i class="fa fa-user fa-sm fa-fw"></i> <span class="translation_missing" title="translation missing: en.links.profile">Profile</span>
+</a>							<a class="dropdown-item" href="https://docs.google.com/document/d/1YXdEF2A7_mfAhVVdjuQUOxQplZPNOFi35OOmTm_TjuQ/export?format=pdf" target="_blank"><i class="fas fa-question-circle fa-sm fa-fw" aria-hidden="true"></i> Help</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="https://modern-po-staging.herokuapp.com/logout">
+								<i class="fas fa-power-off fa-sm fa-fw"></i> <span class="translation_missing" title="translation missing: en.links.logout">Logout</span>
+</a>						</div>
+					</li>
+      </ul>
+
+		</div>
+
+	</div>
+</nav>
+
+      <div class="container main" style="">
+
+          <div class="card mb-3">
+    <form class="new_contact" id="new_contact" enctype="multipart/form-data" action="https://modern-po-staging.herokuapp.com/organizations/57/contacts" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="hcvC5GD48a1YS/uVbxQewfVF2P9//dVTapI6TIqW/Ui5hsYCy/HbeCapfaAjK9tUMVp5SIRIfunoNOICje/Apg==">
+  <div class="card-body">
+    <div class="row">
+  <div class="col-sm-3">
+    <h6><span class="translation_missing" title="translation missing: en.views.contacts.edit.contact">Contact</span></h6>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+  <div class="form-group col-md-4">
+    <label for="contact_contact_name">Contact Name</label>
+    <input class="form-control" required="required" type="text" name="contact[contact_name]" id="contact_contact_name">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="contact_phone">Contact Phone</label>
+    <input class="form-control" type="text" name="contact[phone]" id="contact_phone">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="contact_email">Contact Email</label>
+    <input class="form-control" type="email" name="contact[email]" id="contact_email">
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="contact_name">Company/Organization Name</label>
+  <input class="form-control" type="text" name="contact[name]" id="contact_name">
+</div>
+
+<div class="form-group">
+  <label for="contact_name">Website URL</label>
+  <input class="form-control" type="text" name="contact[name]" id="contact_name">
+</div>
+
+  </div>
+</div>
+
+  <hr>
+
+    <div class="row">
+  <div class="col-sm-3">
+    <h6><span class="translation_missing" title="translation missing: en.views.contacts.edit.address">Address</span></h6>
+  </div>
+  <div class="col-sm-9">
+    <div class="form-group">
+  <label for="contact_address1">Address</label>
+  <input class="form-control" type="text" name="contact[address1]" id="contact_address1">
+</div>
+
+<div class="form-group">
+  <label for="contact_address2">Address 2</label>
+  <input class="form-control" type="text" name="contact[address2]" id="contact_address2">
+</div>
+
+<div class="row mb-1">
+  <div class="form-group col-md-6">
+    <label for="contact_city">City</label>
+    <input class="form-control" type="text" name="contact[city]" id="contact_city">
+  </div>
+  <div class="form-group col-md-2">
+    <label for="contact_state_id">State</label>
+    <select class="form-control" name="contact[state_id]" id="contact_state_id"><option value=""></option>
+<option value="2">Alabama</option>
+<option value="1">Alaska</option>
+<option value="4">Arizona</option>
+<option value="3">Arkansas</option>
+<option value="5">California</option>
+<option value="6">Colorado</option>
+<option value="7">Connecticut</option>
+<option value="9">Delaware</option>
+<option value="8">District of Columbia</option>
+<option value="10">Florida</option>
+<option value="11">Georgia</option>
+<option value="12">Hawaii</option>
+<option value="14">Idaho</option>
+<option value="15">Illinois</option>
+<option value="16">Indiana</option>
+<option value="13">Iowa</option>
+<option value="17">Kansas</option>
+<option value="18">Kentucky</option>
+<option value="19">Louisiana</option>
+<option value="22">Maine</option>
+<option value="21">Maryland</option>
+<option value="20">Massachusetts</option>
+<option value="23">Michigan</option>
+<option value="24">Minnesota</option>
+<option value="26">Mississippi</option>
+<option value="25">Missouri</option>
+<option value="27">Montana</option>
+<option value="30">Nebraska</option>
+<option value="34">Nevada</option>
+<option value="31">New Hampshire</option>
+<option value="32">New Jersey</option>
+<option value="33">New Mexico</option>
+<option value="35">New York</option>
+<option value="28">North Carolina</option>
+<option value="29">North Dakota</option>
+<option value="36">Ohio</option>
+<option value="37">Oklahoma</option>
+<option value="38">Oregon</option>
+<option value="39">Pennsylvania</option>
+<option value="40">Puerto Rico</option>
+<option value="41">Rhode Island</option>
+<option value="42">South Carolina</option>
+<option value="43">South Dakota</option>
+<option value="44">Tennessee</option>
+<option value="45">Texas</option>
+<option value="46">Utah</option>
+<option value="48">Vermont</option>
+<option value="47">Virginia</option>
+<option value="49">Washington</option>
+<option value="51">West Virginia</option>
+<option value="50">Wisconsin</option>
+<option value="52">Wyoming</option></select>
+  </div>
+  <div class="form-group col-md-2">
+    <label for="contact_zip">Zip/Postal Code</label>
+    <input class="form-control" type="text" name="contact[zip]" id="contact_zip">
+  </div>
+  <div class="form-group col-md-2">
+    <label for="contact_country_id">Country</label>
+    <select class="form-control" name="contact[country_id]" id="contact_country_id"><option value=""></option>
+<option value="4">Afghanistan</option>
+<option value="7">Albania</option>
+<option value="60">Algeria</option>
+<option value="13">American Samoa</option>
+<option value="2">Andorra</option>
+<option value="10">Angola</option>
+<option value="6">Anguilla</option>
+<option value="11">Antarctica</option>
+<option value="5">Antigua and Barbuda</option>
+<option value="12">Argentina</option>
+<option value="8">Armenia</option>
+<option value="16">Aruba</option>
+<option value="15">Australia</option>
+<option value="14">Austria</option>
+<option value="17">Azerbaijan</option>
+<option value="31">Bahamas</option>
+<option value="24">Bahrain</option>
+<option value="20">Bangladesh</option>
+<option value="19">Barbados</option>
+<option value="35">Belarus</option>
+<option value="21">Belgium</option>
+<option value="36">Belize</option>
+<option value="26">Benin</option>
+<option value="27">Bermuda</option>
+<option value="32">Bhutan</option>
+<option value="29">Bolivia</option>
+<option value="18">Bosnia and Herzegovina</option>
+<option value="34">Botswana</option>
+<option value="33">Bouvet Island</option>
+<option value="30">Brazil</option>
+<option value="105">British Indian Ocean Territory</option>
+<option value="234">British Virgin Islands</option>
+<option value="28">Brunei</option>
+<option value="23">Bulgaria</option>
+<option value="22">Burkina Faso</option>
+<option value="25">Burundi</option>
+<option value="116">Cambodia</option>
+<option value="46">Cameroon</option>
+<option value="37">Canada</option>
+<option value="51">Cape Verde</option>
+<option value="123">Cayman Islands</option>
+<option value="40">Central African Republic</option>
+<option value="211">Chad</option>
+<option value="45">Chile</option>
+<option value="47">China</option>
+<option value="52">Christmas Island</option>
+<option value="38">Cocos [Keeling] Islands</option>
+<option value="48">Colombia</option>
+<option value="118">Comoros</option>
+<option value="39">Congo [DRC]</option>
+<option value="41">Congo [Republic]</option>
+<option value="44">Cook Islands</option>
+<option value="49">Costa Rica</option>
+<option value="43">Côte d'Ivoire</option>
+<option value="97">Croatia</option>
+<option value="50">Cuba</option>
+<option value="53">Cyprus</option>
+<option value="54">Czech Republic</option>
+<option value="57">Denmark</option>
+<option value="56">Djibouti</option>
+<option value="58">Dominica</option>
+<option value="59">Dominican Republic</option>
+<option value="61">Ecuador</option>
+<option value="63">Egypt</option>
+<option value="207">El Salvador</option>
+<option value="86">Equatorial Guinea</option>
+<option value="65">Eritrea</option>
+<option value="62">Estonia</option>
+<option value="67">Ethiopia</option>
+<option value="70">Falkland Islands [Islas Malvinas]</option>
+<option value="72">Faroe Islands</option>
+<option value="69">Fiji</option>
+<option value="68">Finland</option>
+<option value="73">France</option>
+<option value="78">French Guiana</option>
+<option value="173">French Polynesia</option>
+<option value="212">French Southern Territories</option>
+<option value="74">Gabon</option>
+<option value="83">Gambia</option>
+<option value="93">Gaza Strip</option>
+<option value="77">Georgia</option>
+<option value="55">Germany</option>
+<option value="80">Ghana</option>
+<option value="81">Gibraltar</option>
+<option value="87">Greece</option>
+<option value="82">Greenland</option>
+<option value="76">Grenada</option>
+<option value="85">Guadeloupe</option>
+<option value="90">Guam</option>
+<option value="89">Guatemala</option>
+<option value="79">Guernsey</option>
+<option value="84">Guinea</option>
+<option value="91">Guinea-Bissau</option>
+<option value="92">Guyana</option>
+<option value="98">Haiti</option>
+<option value="95">Heard Island and McDonald Islands</option>
+<option value="96">Honduras</option>
+<option value="94">Hong Kong</option>
+<option value="99">Hungary</option>
+<option value="108">Iceland</option>
+<option value="104">India</option>
+<option value="100">Indonesia</option>
+<option value="107">Iran</option>
+<option value="106">Iraq</option>
+<option value="101">Ireland</option>
+<option value="103">Isle of Man</option>
+<option value="102">Israel</option>
+<option value="109">Italy</option>
+<option value="111">Jamaica</option>
+<option value="113">Japan</option>
+<option value="110">Jersey</option>
+<option value="112">Jordan</option>
+<option value="124">Kazakhstan</option>
+<option value="114">Kenya</option>
+<option value="117">Kiribati</option>
+<option value="240">Kosovo</option>
+<option value="122">Kuwait</option>
+<option value="115">Kyrgyzstan</option>
+<option value="125">Laos</option>
+<option value="134">Latvia</option>
+<option value="126">Lebanon</option>
+<option value="131">Lesotho</option>
+<option value="130">Liberia</option>
+<option value="135">Libya</option>
+<option value="128">Liechtenstein</option>
+<option value="132">Lithuania</option>
+<option value="133">Luxembourg</option>
+<option value="146">Macau</option>
+<option value="142">Macedonia [FYROM]</option>
+<option value="140">Madagascar</option>
+<option value="154">Malawi</option>
+<option value="156">Malaysia</option>
+<option value="153">Maldives</option>
+<option value="143">Mali</option>
+<option value="151">Malta</option>
+<option value="141">Marshall Islands</option>
+<option value="148">Martinique</option>
+<option value="149">Mauritania</option>
+<option value="152">Mauritius</option>
+<option value="242">Mayotte</option>
+<option value="155">Mexico</option>
+<option value="71">Micronesia</option>
+<option value="138">Moldova</option>
+<option value="137">Monaco</option>
+<option value="145">Mongolia</option>
+<option value="139">Montenegro</option>
+<option value="150">Montserrat</option>
+<option value="136">Morocco</option>
+<option value="157">Mozambique</option>
+<option value="144">Myanmar [Burma]</option>
+<option value="158">Namibia</option>
+<option value="167">Nauru</option>
+<option value="166">Nepal</option>
+<option value="164">Netherlands</option>
+<option value="9">Netherlands Antilles</option>
+<option value="159">New Caledonia</option>
+<option value="169">New Zealand</option>
+<option value="163">Nicaragua</option>
+<option value="160">Niger</option>
+<option value="162">Nigeria</option>
+<option value="168">Niue</option>
+<option value="161">Norfolk Island</option>
+<option value="147">Northern Mariana Islands</option>
+<option value="120">North Korea</option>
+<option value="165">Norway</option>
+<option value="170">Oman</option>
+<option value="176">Pakistan</option>
+<option value="183">Palau</option>
+<option value="181">Palestinian Territories</option>
+<option value="171">Panama</option>
+<option value="174">Papua New Guinea</option>
+<option value="184">Paraguay</option>
+<option value="172">Peru</option>
+<option value="175">Philippines</option>
+<option value="179">Pitcairn Islands</option>
+<option value="177">Poland</option>
+<option value="182">Portugal</option>
+<option value="180">Puerto Rico</option>
+<option value="185">Qatar</option>
+<option value="186">Réunion</option>
+<option value="187">Romania</option>
+<option value="189">Russia</option>
+<option value="190">Rwanda</option>
+<option value="197">Saint Helena</option>
+<option value="119">Saint Kitts and Nevis</option>
+<option value="127">Saint Lucia</option>
+<option value="178">Saint Pierre and Miquelon</option>
+<option value="232">Saint Vincent and the Grenadines</option>
+<option value="239">Samoa</option>
+<option value="202">San Marino</option>
+<option value="206">São Tomé and Príncipe</option>
+<option value="191">Saudi Arabia</option>
+<option value="203">Senegal</option>
+<option value="188">Serbia</option>
+<option value="193">Seychelles</option>
+<option value="201">Sierra Leone</option>
+<option value="196">Singapore</option>
+<option value="200">Slovakia</option>
+<option value="198">Slovenia</option>
+<option value="192">Solomon Islands</option>
+<option value="204">Somalia</option>
+<option value="243">South Africa</option>
+<option value="88">South Georgia and the South Sandwich Islands</option>
+<option value="121">South Korea</option>
+<option value="66">Spain</option>
+<option value="129">Sri Lanka</option>
+<option value="194">Sudan</option>
+<option value="205">Suriname</option>
+<option value="199">Svalbard and Jan Mayen</option>
+<option value="209">Swaziland</option>
+<option value="195">Sweden</option>
+<option value="42">Switzerland</option>
+<option value="208">Syria</option>
+<option value="224">Taiwan</option>
+<option value="215">Tajikistan</option>
+<option value="225">Tanzania</option>
+<option value="214">Thailand</option>
+<option value="217">Timor-Leste</option>
+<option value="213">Togo</option>
+<option value="216">Tokelau</option>
+<option value="220">Tonga</option>
+<option value="222">Trinidad and Tobago</option>
+<option value="219">Tunisia</option>
+<option value="221">Turkey</option>
+<option value="218">Turkmenistan</option>
+<option value="210">Turks and Caicos Islands</option>
+<option value="223">Tuvalu</option>
+<option value="227">Uganda</option>
+<option value="226">Ukraine</option>
+<option value="3">United Arab Emirates</option>
+<option value="75">United Kingdom</option>
+<option value="1">United States</option>
+<option value="229">Uruguay</option>
+<option value="228">U.S. Minor Outlying Islands</option>
+<option value="235">U.S. Virgin Islands</option>
+<option value="230">Uzbekistan</option>
+<option value="237">Vanuatu</option>
+<option value="231">Vatican City</option>
+<option value="233">Venezuela</option>
+<option value="236">Vietnam</option>
+<option value="238">Wallis and Futuna</option>
+<option value="64">Western Sahara</option>
+<option value="241">Yemen</option>
+<option value="244">Zambia</option>
+<option value="245">Zimbabwe</option></select>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  <hr>
+
+    <div class="row">
+  <div class="col-sm-3">
+    <h6><span class="translation_missing" title="translation missing: en.views.contacts.edit.terms">Terms</span></h6>
+  </div>
+  <div class="col-sm-9">
+    <div class="row mb-2">
+	<div class="col">
+    <label for="contact_deposit">Deposit</label>
+    <div class="mb-2"><input class="form-control form-control-sm" type="number" name="contact[deposit]" id="contact_deposit"></div>
+	</div>
+	<div class="col">
+    <label for="contact_net">Net</label>
+    <div class="mb-2"><input class="form-control form-control-sm" type="number" name="contact[net]" id="contact_net"></div>
+	</div>
+</div>
+
+  </div>
+</div>
+
+  <hr>
+
+    <div class="row">
+  <div class="col-sm-3">
+    <h6><span class="translation_missing" title="translation missing: en.views.contacts.edit.documents">Documents</span></h6>
+  </div>
+  <div class="col-sm-9">
+    <div class="mb-2">
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col"><span class="translation_missing" title="translation missing: en.activerecord.attributes.document.name">Name</span></th>
+        <th scope="col"><span class="translation_missing" title="translation missing: en.activerecord.attributes.document.document_type_id">Document Type</span></th>
+        <th scope="col"><span class="translation_missing" title="translation missing: en.activerecord.attributes.document.description">Description</span></th>
+        <th scope="col"><span class="translation_missing" title="translation missing: en.activerecord.attributes.document.pdf">Pdf</span></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody id="documents">
+          </tbody>
+  </table>
+  <div class="links">
+    <a class="btn btn-sm btn-outline-secondary add_fields" data-association-insertion-node="#documents" data-association-insertion-method="append" data-association="document" data-associations="documents" data-association-insertion-template="&lt;tr class=&quot;nested-fields&quot;&gt;
+  &lt;td&gt;&lt;input class=&quot;form-control form-control-sm document_name&quot; type=&quot;text&quot; name=&quot;contact[documents_attributes][new_documents][name]&quot; id=&quot;contact_documents_attributes_new_documents_name&quot; /&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;select class=&quot;form-control form-control-sm&quot; name=&quot;contact[documents_attributes][new_documents][contact_document_type_id]&quot; id=&quot;contact_documents_attributes_new_documents_contact_document_type_id&quot;&gt;&lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+&lt;option value=&quot;38&quot;&gt;Brochure&lt;/option&gt;
+&lt;option value=&quot;3&quot;&gt;Catalog&lt;/option&gt;
+&lt;option value=&quot;37&quot;&gt;Proposal&lt;/option&gt;
+&lt;option value=&quot;1&quot;&gt;Tax Document&lt;/option&gt;
+&lt;option value=&quot;36&quot;&gt;Warranty&lt;/option&gt;
+&lt;option value=&quot;2&quot;&gt;Other&lt;/option&gt;&lt;/select&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;input class=&quot;form-control form-control-sm document_description&quot; type=&quot;text&quot; name=&quot;contact[documents_attributes][new_documents][description]&quot; id=&quot;contact_documents_attributes_new_documents_description&quot; /&gt;&lt;/td&gt;
+  &lt;td&gt;
+    &lt;input accept=&quot;application/pdf&quot; class=&quot;document_document&quot; data-direct-upload-url=&quot;https://modern-po-staging.herokuapp.com/rails/active_storage/direct_uploads&quot; type=&quot;file&quot; name=&quot;contact[documents_attributes][new_documents][pdf]&quot; id=&quot;contact_documents_attributes_new_documents_pdf&quot; /&gt;
+
+  &lt;/td&gt;
+  &lt;td&gt;&lt;input value=&quot;false&quot; type=&quot;hidden&quot; name=&quot;contact[documents_attributes][new_documents][_destroy]&quot; id=&quot;contact_documents_attributes_new_documents__destroy&quot; /&gt;&lt;a class=&quot;btn btn-default remove_fields dynamic&quot; href=&quot;#&quot;&gt;&lt;i class=&#39;fa fa-times&#39; aria-hidden=&#39;true&#39;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+" href="https://modern-po-staging.herokuapp.com/organizations/57/contacts/new#">Add Document</a>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  <hr>
+
+    <div class="row">
+  <div class="col-sm-3">
+    <h6><span class="translation_missing" title="translation missing: en.views.contacts.edit.contact_type">Contact Type</span></h6>
+  </div>
+  <div class="col-sm-9">
+    <label for="contact_customer">Customer</label>
+<div class="mb-2"><input name="contact[customer]" type="hidden" value="0"><input type="checkbox" value="1" name="contact[customer]" id="contact_customer"></div>
+
+<label for="contact_freight">Freight</label>
+<div class="mb-2"><input name="contact[freight]" type="hidden" value="0"><input type="checkbox" value="1" name="contact[freight]" id="contact_freight"></div>
+
+<label for="contact_supplier">Supplier</label>
+<div class="mb-2"><input name="contact[supplier]" type="hidden" value="0"><input type="checkbox" value="1" name="contact[supplier]" id="contact_supplier"></div>
+
+  </div>
+</div>
+
+
+  </div>
+  <div class="card-footer d-flex align-items-start">
+
+  <input type="submit" name="commit" value="Save Contact" class="btn btn-primary ml-auto" data-disable-with="Save Contact">
+</div>
+
+</form>
+<div class="modal fade" id="deleteContact" tabindex="-1" role="dialog" aria-labelledby="deleteContactModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-md">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <h6 class="modal-title">Delete Contact</h6>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">×</span>
+	        </button>
+	      </div>
+        <form action="https://modern-po-staging.herokuapp.com/organizations/57/contacts" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="QSfjPkdI7Sj7bqEq8USJ2ZYtOD0j+zCe2KYHPD0thx57rlrTgSZy+PIw2ioBNzyZsIbKwkUnq1cnOdAJh6Ui2g==">
+  	      <div class="modal-body">
+            You have selected to delete
+							<strong></strong>
+						Contact.
+            <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
+  	      </div>
+  	      <div class="modal-footer">
+  	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+            <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
+  	      </div>
+</form>	    </div>
+	  </div>
+	</div>
+
+
+  </div>
+
+      </div>
+
+
+
+
+
+</body></html>
