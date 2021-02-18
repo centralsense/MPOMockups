@@ -301,7 +301,7 @@
 					<label>Invoices</label>
 					<ul class="list-unstyled">
 							<li>
-								<a href="https://modern-po-staging.herokuapp.com/organizations/57/purchase_orders/149/edit?tab=view#" data-toggle="modal" data-target="#editInvoice78">$0.01</a>
+								<a href="#">$0.01</a>
 									<span class="text-muted" data-toggle="modal" data-target="#deleteInvoice78" id="deleteButtonInvoice78"><i class="fa fa-sm fa-times" aria-hidden="true"></i></span>
 									<div class="modal fade" id="deleteInvoice78" tabindex="-1" role="dialog" aria-labelledby="deleteInvoice78ModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-md">
@@ -379,7 +379,7 @@
 
 <div class="row">
   <div class="col-sm-6">
-    <label for="invoice_amount_in_cents">Invoice Amount</label>
+    <label for="invoice_amount_in_cents">Item Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" value="0.01" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
 
   </div>
@@ -415,7 +415,7 @@
 					<label>Payments</label>
 					<ul class="list-unstyled mb-1">
 							<li>
-								<a href="https://modern-po-staging.herokuapp.com/organizations/57/purchase_orders/149/edit?tab=view#" data-toggle="modal" data-target="#editPayment41">$0.01</a> 001
+								<a href="#" data-toggle="modal">$0.01</a> 001
 									<span class="text-muted" data-toggle="modal" data-target="#deletePayment41" id="deleteButtonPayment41"><i class="fa fa-sm fa-times" aria-hidden="true"></i></span>
 									<div class="modal fade" id="deletePayment41" tabindex="-1" role="dialog" aria-labelledby="deletePayment41ModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-md">
@@ -679,10 +679,34 @@
 
 <div class="row">
   <div class="col-sm-6">
-    <label for="invoice_amount_in_cents">Invoice Amount</label>
+    <label for="invoice_amount_in_cents">Item Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
 
   </div>
+
+  <div class="col-sm-6">
+    <label for="invoice_payment_required_at">Shipping Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <label for="invoice_payment_required_at">Tax Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+  </div>
+
+  <div class="col-sm-6">
+    <label for="invoice_payment_required_at">Tariff Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+  </div>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Use Tax
+  </label>
 </div>
 
 <div class="row">
@@ -802,8 +826,30 @@
 <label for="payment_name">Payment ID</label>
 <input class="form-control form-control-sm mb-3" required="required" type="text" name="payment[name]" id="payment_name">
 
-<label for="payment_amount">Amount</label>
-<input class="form-control form-control-sm mb-3" step="0.01" min="0" placeholder="$" type="number" name="payment[amount_in_cents]" id="payment_amount_in_cents">
+<div class="row">
+  <div class="col-sm-6">
+    <label for="invoice_amount_in_cents">Item Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+
+  </div>
+
+  <div class="col-sm-6">
+    <label for="invoice_payment_required_at">Shipping Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <label for="invoice_payment_required_at">Tax Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+  </div>
+
+  <div class="col-sm-6">
+    <label for="invoice_payment_required_at">Tariff Amount</label>
+    <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
+  </div>
+</div>
 
 
 <label for="payment_payment_at">Payment Date</label>
@@ -815,6 +861,13 @@
   <label for="payment_attachment">Attachment (PDF, Photo)</label>
   <div class="mb-2 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="payment[attachment]" id="payment_attachment"></div>
 
+
+  <div class="row">
+    <div class="col">
+      <label for="invoice_notes">Notes</label>
+      <textarea class="form-control form-control-sm mb-3" name="invoice[notes]" id="invoice_notes"></textarea>
+    </div>
+  </div>
 
 	      </div>
         <div class="modal-footer">
