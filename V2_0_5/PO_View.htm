@@ -826,7 +826,7 @@
 <label for="payment_name">Payment ID</label>
 <input class="form-control form-control-sm mb-3" required="required" type="text" name="payment[name]" id="payment_name">
 
-<div class="row">
+<div class="row mb-3">
   <div class="col-sm-6">
     <label for="invoice_amount_in_cents">Item Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
@@ -839,7 +839,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row mb-3">
   <div class="col-sm-6">
     <label for="invoice_payment_required_at">Tax Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
@@ -851,15 +851,19 @@
   </div>
 </div>
 
-
-<label for="payment_payment_at">Payment Date</label>
-<input class="form-control form-control-sm mb-3" type="date" name="payment[payment_at]" id="payment_payment_at">
-
-<label for="payment_invoice_id">Invoice</label>
-<select class="form-control form-control-sm mb-2" name="payment[invoice_id]" id="payment_invoice_id"><option value="78">001</option></select>
+<div class="row mb-3">
+  <div class="col-sm-6">
+    <label for="payment_payment_at">Payment Date</label>
+    <input class="form-control form-control-sm mb-3" type="date" name="payment[payment_at]" id="payment_payment_at">
+  </div>
+  <div class="col-sm-6">
+    <label for="payment_invoice_id">Invoice</label>
+    <select class="form-control form-control-sm mb-2" name="payment[invoice_id]" id="payment_invoice_id"><option value="78">001</option></select>
+  </div>
+</div>
 
   <label for="payment_attachment">Attachment (PDF, Photo)</label>
-  <div class="mb-2 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="payment[attachment]" id="payment_attachment"></div>
+  <div class="mb-3 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="payment[attachment]" id="payment_attachment"></div>
 
 
   <div class="row">
