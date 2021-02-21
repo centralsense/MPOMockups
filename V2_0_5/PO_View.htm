@@ -601,14 +601,14 @@
 	      <div class="modal-body">
 
 <label for="shipment_shipped_at">Shipped Date</label>
-<input class="form-control form-control-sm mb-3" required="required" type="date" name="shipment[shipped_at]" id="shipment_shipped_at">
+<input class="form-control form-control-sm mb-2" required="required" type="date" name="shipment[shipped_at]" id="shipment_shipped_at">
 
 <label for="shipment_contact_id">Ship Via</label>
-<select class="form-control form-control-sm mb-3" name="shipment[contact_id]" id="shipment_contact_id"><option value=""></option>
+<select class="form-control form-control-sm mb-2" name="shipment[contact_id]" id="shipment_contact_id"><option value=""></option>
 </select>
 
 <label for="shipment_tracking_number">Tracking number</label>
-<input class="form-control form-control-sm mb-3" type="text" name="shipment[tracking_number]" id="shipment_tracking_number">
+<input class="form-control form-control-sm mb-2" type="text" name="shipment[tracking_number]" id="shipment_tracking_number">
 
 <label for="shipment_partial_shipment">Partial shipment</label>
 <div class="mb-2"><input name="shipment[partial_shipment]" type="hidden" value="0"><input type="checkbox" value="1" name="shipment[partial_shipment]" id="shipment_partial_shipment"></div>
@@ -643,7 +643,7 @@
       <form class="new_invoice" id="new_invoice" enctype="multipart/form-data" action="https://modern-po-staging.herokuapp.com/organizations/57/purchase_orders/149/create_invoice" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="xWsSqvrbPFNea7/ioXnD0ufB4u1Z+x0YFn2iUlNk/aWKVJIWiqCYXsHDWOKbrtYKONbN28oU3ciq1Q/u8tFclA==">
 	      <div class="modal-body">
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label>ID</label>
     <div>1</div>
@@ -654,7 +654,7 @@
   </div>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="invoice_contact_id">Payee</label>
     <select class="form-control form-control-sm" name="invoice[contact_id]" id="invoice_contact_id"><option value=""></option>
@@ -666,7 +666,7 @@
   </div>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="invoice_name">Invoice ID</label>
     <input class="form-control form-control-sm" required="required" type="text" name="invoice[name]" id="invoice_name">
@@ -677,7 +677,7 @@
   </div>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="invoice_amount_in_cents">Item Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
@@ -690,7 +690,7 @@
   </div>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="invoice_payment_required_at">Tax Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
@@ -702,14 +702,14 @@
   </div>
 </div>
 
-<div class="form-check mb-3">
+<div class="form-check mb-2">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label" for="flexCheckDefault">
     Use Tax
   </label>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col">
     <label for="invoice_notes">Notes</label>
     <textarea class="form-control form-control-sm" name="invoice[notes]" id="invoice_notes"></textarea>
@@ -717,7 +717,7 @@
 </div>
 
   <label for="invoice_attachment">Attachment (PDF, Photo)</label>
-  <div class="mb-3 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="invoice[attachment]" id="invoice_attachment"></div>
+  <div class="mb-2 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="invoice[attachment]" id="invoice_attachment"></div>
 
 
 	      </div>
@@ -745,7 +745,7 @@
 
 	    <div class="modal-body">
 
-        <div class="row mb-3">
+        <div class="row mb-2">
           <div class="col-sm-4">
             <label for="receiving_received_at">Received Date</label>
             <input class="form-control form-control-sm" type="date" name="receiving[received_at]" id="receiving_received_at">
@@ -795,7 +795,7 @@
         </table>
 
         <label for="receiving_message">Message</label>
-        <textarea class="form-control form-control-sm mb-3" name="receiving[message]" id="receiving_message"></textarea>
+        <textarea class="form-control form-control-sm mb-2" name="receiving[message]" id="receiving_message"></textarea>
 
           <label for="receiving_attachment">Attachment (PDF, Photo)</label>
           <div class="mb-2 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="receiving[attachment]" id="receiving_attachment"></div>
@@ -826,9 +826,9 @@
 
 
 <label for="payment_invoice_id">Invoice</label>
-<select class="form-control form-control-sm mb-3" name="payment[invoice_id]" id="payment_invoice_id"><option value="78">001</option></select>
+<select class="form-control form-control-sm mb-2" name="payment[invoice_id]" id="payment_invoice_id"><option value="78">001</option></select>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="payment_name">Payment ID</label>
     <input class="form-control form-control-sm" required="required" type="text" name="payment[name]" id="payment_name">
@@ -839,7 +839,7 @@
   </div>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="invoice_amount_in_cents">Item Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
@@ -852,7 +852,7 @@
   </div>
 </div>
 
-<div class="row mb-3">
+<div class="row mb-2">
   <div class="col-sm-6">
     <label for="invoice_payment_required_at">Tax Amount</label>
     <input class="form-control form-control-sm" step="0.01" min="0" placeholder="$" type="number" name="invoice[amount_in_cents]" id="invoice_amount_in_cents">
@@ -865,10 +865,10 @@
 </div>
 
   <label for="payment_attachment">Attachment (PDF, Photo)</label>
-  <div class="mb-3 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="payment[attachment]" id="payment_attachment"></div>
+  <div class="mb-2 small"><input accept="application/pdf,image/x-png,image/gif,image/jpeg" type="file" name="payment[attachment]" id="payment_attachment"></div>
 
 
-  <div class="row mb-3">
+  <div class="row mb-2">
     <div class="col">
       <label for="invoice_notes">Notes</label>
       <textarea class="form-control form-control-sm" name="invoice[notes]" id="invoice_notes"></textarea>
