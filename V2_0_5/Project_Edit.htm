@@ -81,37 +81,69 @@
     <form class="edit_system" id="edit_system_57" action="#" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="kGHl07MktQOh+VO1gD48/IKna53MBczsypdm3wVRS/lkcGXAib2Xsk4X3yBSbiUIA8N4q1uOrOeb5Zz3pEBFGw==">
   <div class="card-body">
     <div class="row">
-  <div class="col-sm-3">
-    <h6><span class="translation_missing" title="translation missing: en.views.settings.purchase_orders.defaults">Project</span></h6>
-  </div>
-  <div class="col-sm-9">
-    <div class="row mb-2">
-  <div class="col">
-    <label for="system_po_bill_to_contact_id">Project Name</label>
-    <select class="form-control form-control-sm mb-2" name="system[po_bill_to_contact_id]" id="system_po_bill_to_contact_id"><option value=""></option>
-<option value="166">Tarren Mills</option></select>
+      <div class="col-sm-3">
+        <h6><span class="translation_missing" title="translation missing: en.views.settings.purchase_orders.defaults">Project</span></h6>
+      </div>
+      <div class="col-sm-9">
+        <div class="row mb-2">
+          <div class="col">
+            <label for="system_po_bill_to_contact_id">Project Name</label>
+            <select class="form-control form-control-sm mb-2" name="system[po_bill_to_contact_id]" id="system_po_bill_to_contact_id"><option value=""></option>
+        <option value="166">Tarren Mills</option></select>
 
-    <label for="system_po_tax_rate">Project Code</label>
-    <input class="form-control form-control-sm mb-2 col-sm-3" type="text" name="system[po_tax_rate]" id="system_po_tax_rate">
-  </div>
-  <div class="col"></div>
-</div>
+            <label for="system_po_tax_rate">Project Code</label>
+            <input class="form-control form-control-sm mb-2 col-sm-3" type="text" name="system[po_tax_rate]" id="system_po_tax_rate">
 
-  </div>
-</div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Archive
+              </label>
+            </div>
 
-  <hr>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <h6><span class="translation_missing" title="PO Defaults">PO Defaults</span></h6>
+        </div>
+        <div class="col-sm-9">
+          <label for="system_po_bill_to_contact_id">Bill To</label>
+          <select class="form-control form-control-sm mb-2" name="system[po_bill_to_contact_id]" id="system_po_bill_to_contact_id"><option value=""></option>
+            <option value="166"></option>
+          </select>
+
+          <label for="system_po_bill_to_contact_id">Ship To</label>
+          <select class="form-control form-control-sm mb-2" name="system[po_bill_to_contact_id]" id="system_po_bill_to_contact_id"><option value=""></option>
+            <option value="166"></option>
+          </select>
+
+          <label for="system_po_tax_rate">Tax Rate %</label>
+          <input class="form-control form-control-sm mb-2 col-sm-3" type="text" name="system[po_tax_rate]" id="system_po_tax_rate">
+
+        </div>
+      </div>
+
+
+    <hr>
 
     <div class="row">
-  <div class="col-sm-3">
-    <h6><span class="translation_missing" title="translation missing: en.Terms and Conditions">Terms And Conditions</span></h6>
-  </div>
-  <div class="col-sm-9">
-    <label for="system_po_terms">Purchase Orders</label>
-<textarea class="form-control mb-3" rows="5" name="system[po_terms]" id="system_po_terms"></textarea>
+      <div class="col-sm-3">
+        <h6><span class="translation_missing" title="translation missing: en.Terms and Conditions">Terms And Conditions</span></h6>
+      </div>
+      <div class="col-sm-9">
+        <label for="system_po_terms">Purchase Orders</label>
+      <textarea class="form-control mb-3" rows="5" name="system[po_terms]" id="system_po_terms"></textarea>
 
-  </div>
-</div>
+      </div>
+    </div>
 
 
   </div>
