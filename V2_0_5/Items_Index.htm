@@ -87,975 +87,453 @@
 	</div>
 </nav>
 
-      <div class="container main" style="margin-bottom: 40px; padding-bottom: 30px;">
+<div class="container main" style="margin-bottom: 40px; padding-bottom: 30px;">
 
-        <form class="form-inline mb-2" id="search">
-	<input type="hidden" name="filter" value="">
-	<input type="hidden" name="sort" value="Item ID">
-	<div class="col-sm-4 p-0 input-group mb-2 mr-2">
-			<input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm" autofocus="autofocus">
-			<div class="input-group-append">
-				<button class="btn btn-sm btn-outline-secondary" type="button" id="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</div>
-	</div>
-		<div class="ml-auto mb-2">
-			<a class="btn btn-sm btn-outline-primary" href="https://modern-po-staging.herokuapp.com/organizations/45/items/upload">Upload</a>
-			<a class="btn btn-sm btn-primary" data-turbolinks="" data-toggle="" href="https://modern-po-staging.herokuapp.com/organizations/45/items/new">New Item</a>
-		</div>
-</form>
+  <form class="form-inline mb-2" id="search">
+  	<input type="hidden" name="filter" value="">
+  	<input type="hidden" name="sort" value="Item ID">
+  	<div class="col-sm-4 p-0 input-group mb-2 mr-2">
+  			<input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm" autofocus="autofocus">
+  			<div class="input-group-append">
+  				<button class="btn btn-sm btn-outline-secondary" type="button" id="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+  			</div>
+  	</div>
+  		<div class="ml-auto mb-2">
+  			<a class="btn btn-sm btn-outline-primary" href="https://modern-po-staging.herokuapp.com/organizations/45/items/upload">Upload</a>
+  			<a class="btn btn-sm btn-primary" data-turbolinks="" data-toggle="" href="https://modern-po-staging.herokuapp.com/organizations/45/items/new">New Item</a>
+  		</div>
+  </form>
 
-<div class="card mb-3">
-		<div class="card-header d-flex p-2">
-				<ul class="nav nav-pills">
-					<li class="nav-item">
-						<a class="nav-link active" href="https://modern-po-staging.herokuapp.com/organizations/45/items?search=&amp;sort=Item%20ID">All</a>
-					</li>
-						<li class="nav-item">
-							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=Quote%20Requested&amp;search=&amp;sort=Item%20ID">Quote Requested</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=Inventory&amp;search=&amp;sort=Item%20ID">Inventory</a>
-						</li>
-				</ul>
-				<button type="button" class="btn btn-sm btn-white dropleft ml-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				 Sort	&nbsp;<span class="sr-only">Toggle Dropdown</span><i class="fa fa-angle-down" aria-hidden="true"></i>
-				</button>
-				<div class="dropdown-menu">
-						<a class="dropdown-item sort small active" href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Item%20ID">Item ID</a>
-						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Item%20Name">Item Name</a>
-						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Item%20Type">Item Type</a>
-						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Project%20Qty%20Min.">Project Qty Min.</a>
-						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Inventory%20Qty">Inventory Qty</a>
-				</div>
-		</div>
+  <div class="card mb-3">
+  		<div class="card-header d-flex p-2">
+  				<ul class="nav nav-pills">
+  					<li class="nav-item">
+  						<a class="nav-link active" href="https://modern-po-staging.herokuapp.com/organizations/45/items?search=&amp;sort=Item%20ID">All</a>
+  					</li>
+  						<li class="nav-item">
+  							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=Quote%20Requested&amp;search=&amp;sort=Item%20ID">Quote Requested</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=Inventory&amp;search=&amp;sort=Item%20ID">Inventory</a>
+  						</li>
+  				</ul>
+  				<button type="button" class="btn btn-sm btn-white dropleft ml-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  				 Sort	&nbsp;<span class="sr-only">Toggle Dropdown</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+  				</button>
+  				<div class="dropdown-menu">
+  						<a class="dropdown-item sort small active" href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Item%20ID">Item ID</a>
+  						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Item%20Name">Item Name</a>
+  						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Item%20Type">Item Type</a>
+  						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Project%20Qty%20Min.">Project Qty Min.</a>
+  						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/items?filter=&amp;search=&amp;sort=Inventory%20Qty">Inventory Qty</a>
+  				</div>
+  		</div>
 
-	<div class="table-responsive">
-		<table class="table">
-			<thead>
-				<tr>
-						<th><input type="checkbox" name="all" value="all" id="toggleCheckAll"></th>
-  			   <th scope="col">Item ID</th>
-  			   <th scope="col">Item Name</th>
-  			   <th scope="col">Item Type</th>
-  			   <th scope="col">Budget Unit Price</th>
-  			   <th scope="col">Project Qty</th>
-  			   <th scope="col">Qty Ordered</th>
-  			   <th scope="col">Suppliers</th>
-  			   <th scope="col">Project</th>
-				</tr>
-			</thead>
-			<tbody>
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox115"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/115/edit?tab=view">1000</a></td>
-  <td>Aluminum Group - Leather</td>
-  <td>Products: Seating, Chairs</td>
-  <td>$100.00</td>
-  <td>100</td>
-  <td>5</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/87">Herman Miller</a>
-         $100.00<br>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/102">Hive Modern</a>
-         $150.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        W Seattle
-    </small>
-  </td>
-</tr>
+  	<div class="table-responsive">
+  		<table class="table">
+  			<thead>
+  				<tr>
+  					 <th><input type="checkbox" name="all" value="all" id="toggleCheckAll"></th>
+    			   <th scope="col">Item ID</th>
+    			   <th scope="col">Item Name</th>
+    			   <th scope="col">Item Type</th>
+    			   <th scope="col">Budget Unit Price</th>
+    			   <th scope="col">Project Qty</th>
+    			   <th scope="col">Qty Ordered</th>
+    			   <th scope="col">Suppliers</th>
+    			   <th scope="col">Project</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox115"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/115/edit?tab=view">1000</a></td>
+            <td>Aluminum Group - Leather</td>
+            <td>Products: Seating, Chairs</td>
+            <td>$100.00</td>
+            <td>100</td>
+            <td>5</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/87">Herman Miller</a>
+                   $100.00<br>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/102">Hive Modern</a>
+                   $150.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  W Seattle
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox116"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/116/edit?tab=view">1005</a></td>
-  <td>Aluminum Group - Leather</td>
-  <td>Products: Seating, Chairs</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>10</td>
-  <td>
-    <small>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox116"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/116/edit?tab=view">1005</a></td>
+            <td>Aluminum Group - Leather</td>
+            <td>Products: Seating, Chairs</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>10</td>
+            <td>
+              <small>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox124"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/124/edit?tab=view">AR100</a></td>
-  <td>Artwork</td>
-  <td>Products: Artwork</td>
-  <td></td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>0</td>
-  <td>
-    <small>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox124"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/124/edit?tab=view">AR100</a></td>
+            <td>Artwork</td>
+            <td>Products: Artwork</td>
+            <td></td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>0</td>
+            <td>
+              <small>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox70"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/70/edit?tab=view">BT</a></td>
-  <td>Bath Towls </td>
-  <td>Products: Bath</td>
-  <td>$50.00</td>
-  <td>20</td>
-  <td>10</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/103">Canvas Home</a>
-         $100.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        Hilltop Marriott
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox70"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/70/edit?tab=view">BT</a></td>
+            <td>Bath Towls </td>
+            <td>Products: Bath</td>
+            <td>$50.00</td>
+            <td>20</td>
+            <td>10</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/103">Canvas Home</a>
+                   $100.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  Hilltop Marriott
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox76"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/76/edit?tab=view">CBNTS</a></td>
-  <td>Cabinets</td>
-  <td>Products: Casegoods</td>
-  <td>$100.00</td>
-  <td>15</td>
-  <td>15</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/107">Zenporium</a>
-         $1,234.55<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        Hilltop Marriott
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox76"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/76/edit?tab=view">CBNTS</a></td>
+            <td>Cabinets</td>
+            <td>Products: Casegoods</td>
+            <td>$100.00</td>
+            <td>15</td>
+            <td>15</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/107">Zenporium</a>
+                   $1,234.55<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  Hilltop Marriott
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox68"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/68/edit?tab=view">CC</a></td>
-  <td>Cherner Chair</td>
-  <td>Products: Seating, Chairs</td>
-  <td>$0.00</td>
-  <td>40</td>
-  <td>30</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/103">Canvas Home</a>
-         $0.00<br>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/89">Design Within Reach</a>
-         $1,450.00<br>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/102">Hive Modern</a>
-         $0.00<br>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/88">Knoll</a>
-         $0.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        Hilltop Marriott
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox68"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/68/edit?tab=view">CC</a></td>
+            <td>Cherner Chair</td>
+            <td>Products: Seating, Chairs</td>
+            <td>$0.00</td>
+            <td>40</td>
+            <td>30</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/103">Canvas Home</a>
+                   $0.00<br>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/89">Design Within Reach</a>
+                   $1,450.00<br>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/102">Hive Modern</a>
+                   $0.00<br>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/88">Knoll</a>
+                   $0.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  Hilltop Marriott
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox72"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/72/edit?tab=view">CS</a></td>
-  <td>Cutlery Set</td>
-  <td>Products: Kitchen - Utensils</td>
-  <td>$0.00</td>
-  <td>10</td>
-  <td>10</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/103">Canvas Home</a>
-         $13.43<br>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/104">Robert Allen</a>
-         $0.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        Hilltop Marriott
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox72"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/72/edit?tab=view">CS</a></td>
+            <td>Cutlery Set</td>
+            <td>Products: Kitchen - Utensils</td>
+            <td>$0.00</td>
+            <td>10</td>
+            <td>10</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/103">Canvas Home</a>
+                   $13.43<br>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/104">Robert Allen</a>
+                   $0.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  Hilltop Marriott
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox66"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/66/edit?tab=view">EAC</a></td>
-  <td>Eames Aluminum Chair</td>
-  <td>Products: Seating, Chairs</td>
-  <td>$0.00</td>
-  <td>10</td>
-  <td>10</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/87">Herman Miller</a>
-         $1,350.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        Hilltop Marriott
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox66"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/66/edit?tab=view">EAC</a></td>
+            <td>Eames Aluminum Chair</td>
+            <td>Products: Seating, Chairs</td>
+            <td>$0.00</td>
+            <td>10</td>
+            <td>10</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/87">Herman Miller</a>
+                   $1,350.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  Hilltop Marriott
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox74"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/74/edit?tab=view">HM</a></td>
-  <td>Hall Mirrors</td>
-  <td>Products: Mirrors</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>10</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/105">Dixon</a>
-         $450.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox74"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/74/edit?tab=view">HM</a></td>
+            <td>Hall Mirrors</td>
+            <td>Products: Mirrors</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>10</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/105">Dixon</a>
+                   $450.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox75"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/75/edit?tab=view">KTBLS</a></td>
-  <td>Kona Tables</td>
-  <td>Products: Tables</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>57</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/106">Woodworking Hawaii</a>
-         $580.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox75"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/75/edit?tab=view">KTBLS</a></td>
+            <td>Kona Tables</td>
+            <td>Products: Tables</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>57</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/106">Woodworking Hawaii</a>
+                   $580.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox163"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/163/edit?tab=view">Seating100</a></td>
-  <td>George Nelson Sofa</td>
-  <td>Products: Seating, Chairs</td>
-  <td>$300.00</td>
-  <td>40</td>
-  <td>0</td>
-  <td>
-    <small>
-          Herman Miller
-         $1,000.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-        W Seattle
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox163"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/163/edit?tab=view">Seating100</a></td>
+            <td>George Nelson Sofa</td>
+            <td>Products: Seating, Chairs</td>
+            <td>$300.00</td>
+            <td>40</td>
+            <td>0</td>
+            <td>
+              <small>
+                    Herman Miller
+                   $1,000.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+                  W Seattle
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox73"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/73/edit?tab=view">SFA</a></td>
-  <td>Sofa</td>
-  <td>Products: Seating</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>8</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/104">Robert Allen</a>
-         $650.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox73"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/73/edit?tab=view">SFA</a></td>
+            <td>Sofa</td>
+            <td>Products: Seating</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>8</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/104">Robert Allen</a>
+                   $650.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox67"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/67/edit?tab=view">ST</a></td>
-  <td>Saarinen Table</td>
-  <td>Products: Tables</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>8</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/88">Knoll</a>
-         $2,100.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox67"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/67/edit?tab=view">ST</a></td>
+            <td>Saarinen Table</td>
+            <td>Products: Tables</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>8</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/88">Knoll</a>
+                   $2,100.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox71"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/71/edit?tab=view">TBLS</a></td>
-  <td>Tables</td>
-  <td>Products: Tables</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>6</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/102">Hive Modern</a>
-         $1,234.55<br>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox71"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/71/edit?tab=view">TBLS</a></td>
+            <td>Tables</td>
+            <td>Products: Tables</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>6</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/102">Hive Modern</a>
+                   $1,234.55<br>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-						<tr>
-  <td><input type="checkbox" class="object_checkbox" id="object_checkbox69"></td>
-  <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/69/edit?tab=view">TL</a></td>
-  <td>Tolomeo Lamp</td>
-  <td>Products: Lighting, Lamps</td>
-  <td>$0.00</td>
-  <td>0</td>
-  <td>8</td>
-  <td>
-    <small>
-          <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/90">Artemide</a>
-         $1,120.00<br>
-    </small>
-  </td>
-  <td>
-    <small>
-    </small>
-  </td>
-</tr>
+          <tr>
+            <td><input type="checkbox" class="object_checkbox" id="object_checkbox69"></td>
+            <td><a href="https://modern-po-staging.herokuapp.com/organizations/45/items/69/edit?tab=view">TL</a></td>
+            <td>Tolomeo Lamp</td>
+            <td>Products: Lighting, Lamps</td>
+            <td>$0.00</td>
+            <td>0</td>
+            <td>8</td>
+            <td>
+              <small>
+                    <a href="https://modern-po-staging.herokuapp.com/organizations/45/quotes/90">Artemide</a>
+                   $1,120.00<br>
+              </small>
+            </td>
+            <td>
+              <small>
+              </small>
+            </td>
+          </tr>
 
-			</tbody>
-		</table>
-	</div>
+  			</tbody>
+  		</table>
+  	</div>
 
-	<div class="card-footer py-1">
+  	<div class="card-footer py-1">
 
- <br>
+   <br>
 
-	</div>
-</div>
-
-	<script>
-		$("#toggleCheckAll").click(function(){
-	    $(".object_checkbox").prop('checked', $(this).prop("checked"));
-			$(".object_checkbox").trigger('change');
-		})
-	</script>
-
-
-<button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#requestQuote">Request Quote</button>
-<button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#orderItems">Order</button>
-
-<div class="modal fade" id="orderItems" tabindex="-1" role="dialog" aria-labelledby="orderItemsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h6 class="modal-title">Order</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <form action="https://modern-po-staging.herokuapp.com/organizations/45/items/add_order" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="x+q85DDOfw58/hSr7k36KdLp8aNN99RhpWccWd4yWKV0HZrvVcSmUIavLNmUDyQu2xlyIqIw7r2A/DFonGzW8w==">
-        <div class="modal-body">
-          <table class="table table-sm mb-3">
-            	<tbody><tr>
-            		<th>Supplier</th>
-            		<th nowrap="">Item ID</th>
-            		<th>Item Name</th>
-                <th>Item Type</th>
-            		<th>Unit</th>
-            		<th>Project <br>Qty</th>
-            		<th>Qty <br>Inventories</th>
-            		<th>Qty <br>Ordered</th>
-            		<th>Qty <br>Order</th>
-            	</tr>
-
-
-
-                  <tr class="item69" style="display:none;">
-                    <script>
-                      $('#object_checkbox69').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item69").attr('style','display: table-row;');
-                            $(".hidden69").val("on");
-                          }
-                          else
-                          {
-                            $(".item69").attr('style','display: none;');
-                            $(".hidden69").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Artemide</td>
-                    <td><input class="hidden69" type="hidden" name="order[quotes][97][active]" value="off">TL</td>
-                    <td>Tolomeo Lamp</td>
-                    <td>Lighting, Lamps</td>
-                    <td>Each</td>
-                    <td nowrap="">0</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td><input type="number" name="order[quotes][97][quantity]" class="form-control form-control-sm hidden69" value="4"></td>
-                  </tr>
-                  <tr class="item70" style="display:none;">
-                    <script>
-                      $('#object_checkbox70').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item70").attr('style','display: table-row;');
-                            $(".hidden70").val("on");
-                          }
-                          else
-                          {
-                            $(".item70").attr('style','display: none;');
-                            $(".hidden70").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Canvas Home</td>
-                    <td><input class="hidden70" type="hidden" name="order[quotes][98][active]" value="off">BT</td>
-                    <td>Bath Towls </td>
-                    <td>Bath</td>
-                    <td>Each</td>
-                    <td nowrap="">20</td>
-                    <td>0</td>
-                    <td>10</td>
-                    <td><input type="number" name="order[quotes][98][quantity]" class="form-control form-control-sm hidden70" value="10"></td>
-                  </tr>
-                  <tr class="item68" style="display:none;">
-                    <script>
-                      $('#object_checkbox68').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item68").attr('style','display: table-row;');
-                            $(".hidden68").val("on");
-                          }
-                          else
-                          {
-                            $(".item68").attr('style','display: none;');
-                            $(".hidden68").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Canvas Home</td>
-                    <td><input class="hidden68" type="hidden" name="order[quotes][100][active]" value="off">CC</td>
-                    <td>Cherner Chair</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">40</td>
-                    <td>0</td>
-                    <td>30</td>
-                    <td><input type="number" name="order[quotes][100][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
-                  </tr>
-                  <tr class="item72" style="display:none;">
-                    <script>
-                      $('#object_checkbox72').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item72").attr('style','display: table-row;');
-                            $(".hidden72").val("on");
-                          }
-                          else
-                          {
-                            $(".item72").attr('style','display: none;');
-                            $(".hidden72").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Canvas Home</td>
-                    <td><input class="hidden72" type="hidden" name="order[quotes][90][active]" value="off">CS</td>
-                    <td>Cutlery Set</td>
-                    <td>Kitchen - Utensils</td>
-                    <td>Each</td>
-                    <td nowrap="">10</td>
-                    <td>0</td>
-                    <td>10</td>
-                    <td><input type="number" name="order[quotes][90][quantity]" class="form-control form-control-sm hidden72" value="5"></td>
-                  </tr>
-                  <tr class="item68" style="display:none;">
-                    <script>
-                      $('#object_checkbox68').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item68").attr('style','display: table-row;');
-                            $(".hidden68").val("on");
-                          }
-                          else
-                          {
-                            $(".item68").attr('style','display: none;');
-                            $(".hidden68").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Design Within Reach</td>
-                    <td><input class="hidden68" type="hidden" name="order[quotes][89][active]" value="off">CC</td>
-                    <td>Cherner Chair</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">40</td>
-                    <td>0</td>
-                    <td>30</td>
-                    <td><input type="number" name="order[quotes][89][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
-                  </tr>
-                  <tr class="item74" style="display:none;">
-                    <script>
-                      $('#object_checkbox74').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item74").attr('style','display: table-row;');
-                            $(".hidden74").val("on");
-                          }
-                          else
-                          {
-                            $(".item74").attr('style','display: none;');
-                            $(".hidden74").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Dixon</td>
-                    <td><input class="hidden74" type="hidden" name="order[quotes][92][active]" value="off">HM</td>
-                    <td>Hall Mirrors</td>
-                    <td>Mirrors</td>
-                    <td>Each</td>
-                    <td nowrap="">0</td>
-                    <td>0</td>
-                    <td>10</td>
-                    <td><input type="number" name="order[quotes][92][quantity]" class="form-control form-control-sm hidden74" value="4"></td>
-                  </tr>
-                  <tr class="item115" style="display:none;">
-                    <script>
-                      $('#object_checkbox115').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item115").attr('style','display: table-row;');
-                            $(".hidden115").val("on");
-                          }
-                          else
-                          {
-                            $(".item115").attr('style','display: none;');
-                            $(".hidden115").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Herman Miller</td>
-                    <td><input class="hidden115" type="hidden" name="order[quotes][105][active]" value="off">1000</td>
-                    <td>Aluminum Group - Leather</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">100</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td><input type="number" name="order[quotes][105][quantity]" class="form-control form-control-sm hidden115" value="50"></td>
-                  </tr>
-                  <tr class="item66" style="display:none;">
-                    <script>
-                      $('#object_checkbox66').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item66").attr('style','display: table-row;');
-                            $(".hidden66").val("on");
-                          }
-                          else
-                          {
-                            $(".item66").attr('style','display: none;');
-                            $(".hidden66").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Herman Miller</td>
-                    <td><input class="hidden66" type="hidden" name="order[quotes][91][active]" value="off">EAC</td>
-                    <td>Eames Aluminum Chair</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">10</td>
-                    <td>0</td>
-                    <td>10</td>
-                    <td><input type="number" name="order[quotes][91][quantity]" class="form-control form-control-sm hidden66" value="5"></td>
-                  </tr>
-                  <tr class="item163" style="display:none;">
-                    <script>
-                      $('#object_checkbox163').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item163").attr('style','display: table-row;');
-                            $(".hidden163").val("on");
-                          }
-                          else
-                          {
-                            $(".item163").attr('style','display: none;');
-                            $(".hidden163").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Herman Miller</td>
-                    <td><input class="hidden163" type="hidden" name="order[quotes][114][active]" value="off">Seating100</td>
-                    <td>George Nelson Sofa</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">40</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><input type="number" name="order[quotes][114][quantity]" class="form-control form-control-sm hidden163" value=""></td>
-                  </tr>
-                  <tr class="item115" style="display:none;">
-                    <script>
-                      $('#object_checkbox115').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item115").attr('style','display: table-row;');
-                            $(".hidden115").val("on");
-                          }
-                          else
-                          {
-                            $(".item115").attr('style','display: none;');
-                            $(".hidden115").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Hive Modern</td>
-                    <td><input class="hidden115" type="hidden" name="order[quotes][121][active]" value="off">1000</td>
-                    <td>Aluminum Group - Leather</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">100</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td><input type="number" name="order[quotes][121][quantity]" class="form-control form-control-sm hidden115" value="50"></td>
-                  </tr>
-                  <tr class="item68" style="display:none;">
-                    <script>
-                      $('#object_checkbox68').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item68").attr('style','display: table-row;');
-                            $(".hidden68").val("on");
-                          }
-                          else
-                          {
-                            $(".item68").attr('style','display: none;');
-                            $(".hidden68").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Hive Modern</td>
-                    <td><input class="hidden68" type="hidden" name="order[quotes][99][active]" value="off">CC</td>
-                    <td>Cherner Chair</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">40</td>
-                    <td>0</td>
-                    <td>30</td>
-                    <td><input type="number" name="order[quotes][99][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
-                  </tr>
-                  <tr class="item71" style="display:none;">
-                    <script>
-                      $('#object_checkbox71').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item71").attr('style','display: table-row;');
-                            $(".hidden71").val("on");
-                          }
-                          else
-                          {
-                            $(".item71").attr('style','display: none;');
-                            $(".hidden71").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Hive Modern</td>
-                    <td><input class="hidden71" type="hidden" name="order[quotes][96][active]" value="off">TBLS</td>
-                    <td>Tables</td>
-                    <td>Tables</td>
-                    <td>Each</td>
-                    <td nowrap="">0</td>
-                    <td>0</td>
-                    <td>6</td>
-                    <td><input type="number" name="order[quotes][96][quantity]" class="form-control form-control-sm hidden71" value="4"></td>
-                  </tr>
-                  <tr class="item68" style="display:none;">
-                    <script>
-                      $('#object_checkbox68').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item68").attr('style','display: table-row;');
-                            $(".hidden68").val("on");
-                          }
-                          else
-                          {
-                            $(".item68").attr('style','display: none;');
-                            $(".hidden68").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Knoll</td>
-                    <td><input class="hidden68" type="hidden" name="order[quotes][101][active]" value="off">CC</td>
-                    <td>Cherner Chair</td>
-                    <td>Seating, Chairs</td>
-                    <td>Each</td>
-                    <td nowrap="">40</td>
-                    <td>0</td>
-                    <td>30</td>
-                    <td><input type="number" name="order[quotes][101][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
-                  </tr>
-                  <tr class="item67" style="display:none;">
-                    <script>
-                      $('#object_checkbox67').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item67").attr('style','display: table-row;');
-                            $(".hidden67").val("on");
-                          }
-                          else
-                          {
-                            $(".item67").attr('style','display: none;');
-                            $(".hidden67").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Knoll</td>
-                    <td><input class="hidden67" type="hidden" name="order[quotes][95][active]" value="off">ST</td>
-                    <td>Saarinen Table</td>
-                    <td>Tables</td>
-                    <td>Each</td>
-                    <td nowrap="">0</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td><input type="number" name="order[quotes][95][quantity]" class="form-control form-control-sm hidden67" value="4"></td>
-                  </tr>
-                  <tr class="item72" style="display:none;">
-                    <script>
-                      $('#object_checkbox72').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item72").attr('style','display: table-row;');
-                            $(".hidden72").val("on");
-                          }
-                          else
-                          {
-                            $(".item72").attr('style','display: none;');
-                            $(".hidden72").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Robert Allen</td>
-                    <td><input class="hidden72" type="hidden" name="order[quotes][104][active]" value="off">CS</td>
-                    <td>Cutlery Set</td>
-                    <td>Kitchen - Utensils</td>
-                    <td>Each</td>
-                    <td nowrap="">10</td>
-                    <td>0</td>
-                    <td>10</td>
-                    <td><input type="number" name="order[quotes][104][quantity]" class="form-control form-control-sm hidden72" value=""></td>
-                  </tr>
-                  <tr class="item73" style="display:none;">
-                    <script>
-                      $('#object_checkbox73').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item73").attr('style','display: table-row;');
-                            $(".hidden73").val("on");
-                          }
-                          else
-                          {
-                            $(".item73").attr('style','display: none;');
-                            $(".hidden73").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Robert Allen</td>
-                    <td><input class="hidden73" type="hidden" name="order[quotes][94][active]" value="off">SFA</td>
-                    <td>Sofa</td>
-                    <td>Seating</td>
-                    <td>Each</td>
-                    <td nowrap="">0</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td><input type="number" name="order[quotes][94][quantity]" class="form-control form-control-sm hidden73" value="4"></td>
-                  </tr>
-                  <tr class="item75" style="display:none;">
-                    <script>
-                      $('#object_checkbox75').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item75").attr('style','display: table-row;');
-                            $(".hidden75").val("on");
-                          }
-                          else
-                          {
-                            $(".item75").attr('style','display: none;');
-                            $(".hidden75").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Woodworking Hawaii</td>
-                    <td><input class="hidden75" type="hidden" name="order[quotes][93][active]" value="off">KTBLS</td>
-                    <td>Kona Tables</td>
-                    <td>Tables</td>
-                    <td>Each</td>
-                    <td nowrap="">0</td>
-                    <td>0</td>
-                    <td>57</td>
-                    <td><input type="number" name="order[quotes][93][quantity]" class="form-control form-control-sm hidden75" value="4"></td>
-                  </tr>
-                  <tr class="item76" style="display:none;">
-                    <script>
-                      $('#object_checkbox76').on("change",function(){
-                          checked = $(this).prop("checked");
-                          if (checked == true)
-                          {
-                            $(".item76").attr('style','display: table-row;');
-                            $(".hidden76").val("on");
-                          }
-                          else
-                          {
-                            $(".item76").attr('style','display: none;');
-                            $(".hidden76").val("off");
-                          }
-                      });
-                    </script>
-                    <td>Zenporium</td>
-                    <td><input class="hidden76" type="hidden" name="order[quotes][88][active]" value="off">CBNTS</td>
-                    <td>Cabinets</td>
-                    <td>Casegoods</td>
-                    <td>Each</td>
-                    <td nowrap="">15</td>
-                    <td>0</td>
-                    <td>15</td>
-                    <td><input type="number" name="order[quotes][88][quantity]" class="form-control form-control-sm hidden76" value="10"></td>
-                  </tr>
-            </tbody>
-          </table>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Add to Order" class="btn btn-primary" data-disable-with="Add to Order">
-        </div>
-</form>    </div>
+  	</div>
   </div>
+
+  	<script>
+  		$("#toggleCheckAll").click(function(){
+  	    $(".object_checkbox").prop('checked', $(this).prop("checked"));
+  			$(".object_checkbox").trigger('change');
+  		})
+  	</script>
+<div class="d-flex">
+  <button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#requestQuote">Request Quote</button>
+  <button class="btn btn-outline-dark btn-sm ml-1" data-toggle="modal" data-target="#orderItems">Order</button>
+  <button class="btn btn-outline-dark btn-sm ml-auto" data-toggle="modal" data-target="#ItemDownload">Download</button>
 </div>
 
-<div class="modal fade" id="requestQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+  <div class="modal fade" id="orderItems" tabindex="-1" role="dialog" aria-labelledby="orderItemsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
 
-      <div class="modal-header">
-        <h6 class="modal-title">Request Quote</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
+        <div class="modal-header">
+          <h6 class="modal-title">Order</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <form action="https://modern-po-staging.herokuapp.com/organizations/45/items/add_order" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="x+q85DDOfw58/hSr7k36KdLp8aNN99RhpWccWd4yWKV0HZrvVcSmUIavLNmUDyQu2xlyIqIw7r2A/DFonGzW8w==">
+          <div class="modal-body">
+            <table class="table table-sm mb-3">
+              	<tbody><tr>
+              		<th>Supplier</th>
+              		<th nowrap="">Item ID</th>
+              		<th>Item Name</th>
+                  <th>Item Type</th>
+              		<th>Unit</th>
+              		<th>Project <br>Qty</th>
+              		<th>Qty <br>Inventories</th>
+              		<th>Qty <br>Ordered</th>
+              		<th>Qty <br>Order</th>
+              	</tr>
 
-      <form action="https://modern-po-staging.herokuapp.com/organizations/45/items/request_quote" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="WjstuXA8Bu/e4ncNM2aSOceb51lUWbZ721rqcAGPVuTnHVgiXirUwPx1WabuYhay964DiXrA3ssEDYzpCUocew==">
-        <div class="modal-body">
-          <table class="table table-sm mb-3">
-            <tbody>
-              <tr>
-            		<th nowrap="">Item ID</th>
-            		<th>Item Name</th>
-            		<th>Supplier</th>
-            		<th>Unit Price</th>
-                <th>Unit</th>
-            		<th width="100">Qty Order</th>
-            	</tr>
-                    <tr class="item115" style="display:none;">
+
+
+                    <tr class="item69" style="display:none;">
                       <script>
-                        $('#object_checkbox115').on("change",function(){
+                        $('#object_checkbox69').on("change",function(){
                             checked = $(this).prop("checked");
                             if (checked == true)
                             {
-                              $(".item115").attr('style','display: table-row;');
-                              $(".hidden115").val("on");
+                              $(".item69").attr('style','display: table-row;');
+                              $(".hidden69").val("on");
                             }
                             else
                             {
-                              $(".item115").attr('style','display: none;');
-                              $(".hidden115").val("off");
+                              $(".item69").attr('style','display: none;');
+                              $(".hidden69").val("off");
                             }
                         });
                       </script>
-                      <td><input class="hidden115" type="hidden" name="request_quote[quotes][105][active]" value="off">1000</td>
-                      <td>Aluminum Group - Leather</td>
-                      <td>Herman Miller</td>
-                      <td>$100.00</td>
+                      <td>Artemide</td>
+                      <td><input class="hidden69" type="hidden" name="order[quotes][97][active]" value="off">TL</td>
+                      <td>Tolomeo Lamp</td>
+                      <td>Lighting, Lamps</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][105][quantity]" class="form-control form-control-sm" ,="" value="50"></td>
-                    </tr>
-                    <tr class="item115" style="display:none;">
-                      <script>
-                        $('#object_checkbox115').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item115").attr('style','display: table-row;');
-                              $(".hidden115").val("on");
-                            }
-                            else
-                            {
-                              $(".item115").attr('style','display: none;');
-                              $(".hidden115").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden115" type="hidden" name="request_quote[quotes][121][active]" value="off">1000</td>
-                      <td>Aluminum Group - Leather</td>
-                      <td>Hive Modern</td>
-                      <td>$150.00</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][121][quantity]" class="form-control form-control-sm" ,="" value="50"></td>
+                      <td nowrap="">0</td>
+                      <td>0</td>
+                      <td>8</td>
+                      <td><input type="number" name="order[quotes][97][quantity]" class="form-control form-control-sm hidden69" value="4"></td>
                     </tr>
                     <tr class="item70" style="display:none;">
                       <script>
@@ -1073,35 +551,15 @@
                             }
                         });
                       </script>
-                      <td><input class="hidden70" type="hidden" name="request_quote[quotes][98][active]" value="off">BT</td>
+                      <td>Canvas Home</td>
+                      <td><input class="hidden70" type="hidden" name="order[quotes][98][active]" value="off">BT</td>
                       <td>Bath Towls </td>
-                      <td>Canvas Home</td>
-                      <td>$100.00</td>
+                      <td>Bath</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][98][quantity]" class="form-control form-control-sm" ,="" value="10"></td>
-                    </tr>
-                    <tr class="item76" style="display:none;">
-                      <script>
-                        $('#object_checkbox76').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item76").attr('style','display: table-row;');
-                              $(".hidden76").val("on");
-                            }
-                            else
-                            {
-                              $(".item76").attr('style','display: none;');
-                              $(".hidden76").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden76" type="hidden" name="request_quote[quotes][88][active]" value="off">CBNTS</td>
-                      <td>Cabinets</td>
-                      <td>Zenporium</td>
-                      <td>$1,234.55</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][88][quantity]" class="form-control form-control-sm" ,="" value="10"></td>
+                      <td nowrap="">20</td>
+                      <td>0</td>
+                      <td>10</td>
+                      <td><input type="number" name="order[quotes][98][quantity]" class="form-control form-control-sm hidden70" value="10"></td>
                     </tr>
                     <tr class="item68" style="display:none;">
                       <script>
@@ -1119,12 +577,41 @@
                             }
                         });
                       </script>
-                      <td><input class="hidden68" type="hidden" name="request_quote[quotes][100][active]" value="off">CC</td>
-                      <td>Cherner Chair</td>
                       <td>Canvas Home</td>
-                      <td>$0.00</td>
+                      <td><input class="hidden68" type="hidden" name="order[quotes][100][active]" value="off">CC</td>
+                      <td>Cherner Chair</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][100][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      <td nowrap="">40</td>
+                      <td>0</td>
+                      <td>30</td>
+                      <td><input type="number" name="order[quotes][100][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
+                    </tr>
+                    <tr class="item72" style="display:none;">
+                      <script>
+                        $('#object_checkbox72').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item72").attr('style','display: table-row;');
+                              $(".hidden72").val("on");
+                            }
+                            else
+                            {
+                              $(".item72").attr('style','display: none;');
+                              $(".hidden72").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Canvas Home</td>
+                      <td><input class="hidden72" type="hidden" name="order[quotes][90][active]" value="off">CS</td>
+                      <td>Cutlery Set</td>
+                      <td>Kitchen - Utensils</td>
+                      <td>Each</td>
+                      <td nowrap="">10</td>
+                      <td>0</td>
+                      <td>10</td>
+                      <td><input type="number" name="order[quotes][90][quantity]" class="form-control form-control-sm hidden72" value="5"></td>
                     </tr>
                     <tr class="item68" style="display:none;">
                       <script>
@@ -1142,127 +629,15 @@
                             }
                         });
                       </script>
-                      <td><input class="hidden68" type="hidden" name="request_quote[quotes][89][active]" value="off">CC</td>
-                      <td>Cherner Chair</td>
                       <td>Design Within Reach</td>
-                      <td>$1,450.00</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][89][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
-                    </tr>
-                    <tr class="item68" style="display:none;">
-                      <script>
-                        $('#object_checkbox68').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item68").attr('style','display: table-row;');
-                              $(".hidden68").val("on");
-                            }
-                            else
-                            {
-                              $(".item68").attr('style','display: none;');
-                              $(".hidden68").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden68" type="hidden" name="request_quote[quotes][99][active]" value="off">CC</td>
+                      <td><input class="hidden68" type="hidden" name="order[quotes][89][active]" value="off">CC</td>
                       <td>Cherner Chair</td>
-                      <td>Hive Modern</td>
-                      <td>$0.00</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][99][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
-                    </tr>
-                    <tr class="item68" style="display:none;">
-                      <script>
-                        $('#object_checkbox68').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item68").attr('style','display: table-row;');
-                              $(".hidden68").val("on");
-                            }
-                            else
-                            {
-                              $(".item68").attr('style','display: none;');
-                              $(".hidden68").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden68" type="hidden" name="request_quote[quotes][101][active]" value="off">CC</td>
-                      <td>Cherner Chair</td>
-                      <td>Knoll</td>
-                      <td>$0.00</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][101][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
-                    </tr>
-                    <tr class="item72" style="display:none;">
-                      <script>
-                        $('#object_checkbox72').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item72").attr('style','display: table-row;');
-                              $(".hidden72").val("on");
-                            }
-                            else
-                            {
-                              $(".item72").attr('style','display: none;');
-                              $(".hidden72").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden72" type="hidden" name="request_quote[quotes][90][active]" value="off">CS</td>
-                      <td>Cutlery Set</td>
-                      <td>Canvas Home</td>
-                      <td>$13.43</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][90][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
-                    </tr>
-                    <tr class="item72" style="display:none;">
-                      <script>
-                        $('#object_checkbox72').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item72").attr('style','display: table-row;');
-                              $(".hidden72").val("on");
-                            }
-                            else
-                            {
-                              $(".item72").attr('style','display: none;');
-                              $(".hidden72").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden72" type="hidden" name="request_quote[quotes][104][active]" value="off">CS</td>
-                      <td>Cutlery Set</td>
-                      <td>Robert Allen</td>
-                      <td>$0.00</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][104][quantity]" class="form-control form-control-sm" ,="" value=""></td>
-                    </tr>
-                    <tr class="item66" style="display:none;">
-                      <script>
-                        $('#object_checkbox66').on("change",function(){
-                            checked = $(this).prop("checked");
-                            if (checked == true)
-                            {
-                              $(".item66").attr('style','display: table-row;');
-                              $(".hidden66").val("on");
-                            }
-                            else
-                            {
-                              $(".item66").attr('style','display: none;');
-                              $(".hidden66").val("off");
-                            }
-                        });
-                      </script>
-                      <td><input class="hidden66" type="hidden" name="request_quote[quotes][91][active]" value="off">EAC</td>
-                      <td>Eames Aluminum Chair</td>
-                      <td>Herman Miller</td>
-                      <td>$1,350.00</td>
-                      <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][91][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      <td nowrap="">40</td>
+                      <td>0</td>
+                      <td>30</td>
+                      <td><input type="number" name="order[quotes][89][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
                     </tr>
                     <tr class="item74" style="display:none;">
                       <script>
@@ -1280,35 +655,67 @@
                             }
                         });
                       </script>
-                      <td><input class="hidden74" type="hidden" name="request_quote[quotes][92][active]" value="off">HM</td>
-                      <td>Hall Mirrors</td>
                       <td>Dixon</td>
-                      <td>$450.00</td>
+                      <td><input class="hidden74" type="hidden" name="order[quotes][92][active]" value="off">HM</td>
+                      <td>Hall Mirrors</td>
+                      <td>Mirrors</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][92][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      <td nowrap="">0</td>
+                      <td>0</td>
+                      <td>10</td>
+                      <td><input type="number" name="order[quotes][92][quantity]" class="form-control form-control-sm hidden74" value="4"></td>
                     </tr>
-                    <tr class="item75" style="display:none;">
+                    <tr class="item115" style="display:none;">
                       <script>
-                        $('#object_checkbox75').on("change",function(){
+                        $('#object_checkbox115').on("change",function(){
                             checked = $(this).prop("checked");
                             if (checked == true)
                             {
-                              $(".item75").attr('style','display: table-row;');
-                              $(".hidden75").val("on");
+                              $(".item115").attr('style','display: table-row;');
+                              $(".hidden115").val("on");
                             }
                             else
                             {
-                              $(".item75").attr('style','display: none;');
-                              $(".hidden75").val("off");
+                              $(".item115").attr('style','display: none;');
+                              $(".hidden115").val("off");
                             }
                         });
                       </script>
-                      <td><input class="hidden75" type="hidden" name="request_quote[quotes][93][active]" value="off">KTBLS</td>
-                      <td>Kona Tables</td>
-                      <td>Woodworking Hawaii</td>
-                      <td>$580.00</td>
+                      <td>Herman Miller</td>
+                      <td><input class="hidden115" type="hidden" name="order[quotes][105][active]" value="off">1000</td>
+                      <td>Aluminum Group - Leather</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][93][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      <td nowrap="">100</td>
+                      <td>0</td>
+                      <td>5</td>
+                      <td><input type="number" name="order[quotes][105][quantity]" class="form-control form-control-sm hidden115" value="50"></td>
+                    </tr>
+                    <tr class="item66" style="display:none;">
+                      <script>
+                        $('#object_checkbox66').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item66").attr('style','display: table-row;');
+                              $(".hidden66").val("on");
+                            }
+                            else
+                            {
+                              $(".item66").attr('style','display: none;');
+                              $(".hidden66").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Herman Miller</td>
+                      <td><input class="hidden66" type="hidden" name="order[quotes][91][active]" value="off">EAC</td>
+                      <td>Eames Aluminum Chair</td>
+                      <td>Seating, Chairs</td>
+                      <td>Each</td>
+                      <td nowrap="">10</td>
+                      <td>0</td>
+                      <td>10</td>
+                      <td><input type="number" name="order[quotes][91][quantity]" class="form-control form-control-sm hidden66" value="5"></td>
                     </tr>
                     <tr class="item163" style="display:none;">
                       <script>
@@ -1326,58 +733,67 @@
                             }
                         });
                       </script>
-                      <td><input class="hidden163" type="hidden" name="request_quote[quotes][114][active]" value="off">Seating100</td>
-                      <td>George Nelson Sofa</td>
                       <td>Herman Miller</td>
-                      <td>$1,000.00</td>
+                      <td><input class="hidden163" type="hidden" name="order[quotes][114][active]" value="off">Seating100</td>
+                      <td>George Nelson Sofa</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][114][quantity]" class="form-control form-control-sm" ,="" value=""></td>
+                      <td nowrap="">40</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td><input type="number" name="order[quotes][114][quantity]" class="form-control form-control-sm hidden163" value=""></td>
                     </tr>
-                    <tr class="item73" style="display:none;">
+                    <tr class="item115" style="display:none;">
                       <script>
-                        $('#object_checkbox73').on("change",function(){
+                        $('#object_checkbox115').on("change",function(){
                             checked = $(this).prop("checked");
                             if (checked == true)
                             {
-                              $(".item73").attr('style','display: table-row;');
-                              $(".hidden73").val("on");
+                              $(".item115").attr('style','display: table-row;');
+                              $(".hidden115").val("on");
                             }
                             else
                             {
-                              $(".item73").attr('style','display: none;');
-                              $(".hidden73").val("off");
+                              $(".item115").attr('style','display: none;');
+                              $(".hidden115").val("off");
                             }
                         });
                       </script>
-                      <td><input class="hidden73" type="hidden" name="request_quote[quotes][94][active]" value="off">SFA</td>
-                      <td>Sofa</td>
-                      <td>Robert Allen</td>
-                      <td>$650.00</td>
+                      <td>Hive Modern</td>
+                      <td><input class="hidden115" type="hidden" name="order[quotes][121][active]" value="off">1000</td>
+                      <td>Aluminum Group - Leather</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][94][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      <td nowrap="">100</td>
+                      <td>0</td>
+                      <td>5</td>
+                      <td><input type="number" name="order[quotes][121][quantity]" class="form-control form-control-sm hidden115" value="50"></td>
                     </tr>
-                    <tr class="item67" style="display:none;">
+                    <tr class="item68" style="display:none;">
                       <script>
-                        $('#object_checkbox67').on("change",function(){
+                        $('#object_checkbox68').on("change",function(){
                             checked = $(this).prop("checked");
                             if (checked == true)
                             {
-                              $(".item67").attr('style','display: table-row;');
-                              $(".hidden67").val("on");
+                              $(".item68").attr('style','display: table-row;');
+                              $(".hidden68").val("on");
                             }
                             else
                             {
-                              $(".item67").attr('style','display: none;');
-                              $(".hidden67").val("off");
+                              $(".item68").attr('style','display: none;');
+                              $(".hidden68").val("off");
                             }
                         });
                       </script>
-                      <td><input class="hidden67" type="hidden" name="request_quote[quotes][95][active]" value="off">ST</td>
-                      <td>Saarinen Table</td>
-                      <td>Knoll</td>
-                      <td>$2,100.00</td>
+                      <td>Hive Modern</td>
+                      <td><input class="hidden68" type="hidden" name="order[quotes][99][active]" value="off">CC</td>
+                      <td>Cherner Chair</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][95][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      <td nowrap="">40</td>
+                      <td>0</td>
+                      <td>30</td>
+                      <td><input type="number" name="order[quotes][99][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
                     </tr>
                     <tr class="item71" style="display:none;">
                       <script>
@@ -1395,53 +811,673 @@
                             }
                         });
                       </script>
-                      <td><input class="hidden71" type="hidden" name="request_quote[quotes][96][active]" value="off">TBLS</td>
-                      <td>Tables</td>
                       <td>Hive Modern</td>
-                      <td>$1,234.55</td>
+                      <td><input class="hidden71" type="hidden" name="order[quotes][96][active]" value="off">TBLS</td>
+                      <td>Tables</td>
+                      <td>Tables</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][96][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      <td nowrap="">0</td>
+                      <td>0</td>
+                      <td>6</td>
+                      <td><input type="number" name="order[quotes][96][quantity]" class="form-control form-control-sm hidden71" value="4"></td>
                     </tr>
-                    <tr class="item69" style="display:none;">
+                    <tr class="item68" style="display:none;">
                       <script>
-                        $('#object_checkbox69').on("change",function(){
+                        $('#object_checkbox68').on("change",function(){
                             checked = $(this).prop("checked");
                             if (checked == true)
                             {
-                              $(".item69").attr('style','display: table-row;');
-                              $(".hidden69").val("on");
+                              $(".item68").attr('style','display: table-row;');
+                              $(".hidden68").val("on");
                             }
                             else
                             {
-                              $(".item69").attr('style','display: none;');
-                              $(".hidden69").val("off");
+                              $(".item68").attr('style','display: none;');
+                              $(".hidden68").val("off");
                             }
                         });
                       </script>
-                      <td><input class="hidden69" type="hidden" name="request_quote[quotes][97][active]" value="off">TL</td>
-                      <td>Tolomeo Lamp</td>
-                      <td>Artemide</td>
-                      <td>$1,120.00</td>
+                      <td>Knoll</td>
+                      <td><input class="hidden68" type="hidden" name="order[quotes][101][active]" value="off">CC</td>
+                      <td>Cherner Chair</td>
+                      <td>Seating, Chairs</td>
                       <td>Each</td>
-                      <td><input type="number" name="request_quote[quotes][97][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      <td nowrap="">40</td>
+                      <td>0</td>
+                      <td>30</td>
+                      <td><input type="number" name="order[quotes][101][quantity]" class="form-control form-control-sm hidden68" value="5"></td>
                     </tr>
-            </tbody>
-          </table>
+                    <tr class="item67" style="display:none;">
+                      <script>
+                        $('#object_checkbox67').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item67").attr('style','display: table-row;');
+                              $(".hidden67").val("on");
+                            }
+                            else
+                            {
+                              $(".item67").attr('style','display: none;');
+                              $(".hidden67").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Knoll</td>
+                      <td><input class="hidden67" type="hidden" name="order[quotes][95][active]" value="off">ST</td>
+                      <td>Saarinen Table</td>
+                      <td>Tables</td>
+                      <td>Each</td>
+                      <td nowrap="">0</td>
+                      <td>0</td>
+                      <td>8</td>
+                      <td><input type="number" name="order[quotes][95][quantity]" class="form-control form-control-sm hidden67" value="4"></td>
+                    </tr>
+                    <tr class="item72" style="display:none;">
+                      <script>
+                        $('#object_checkbox72').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item72").attr('style','display: table-row;');
+                              $(".hidden72").val("on");
+                            }
+                            else
+                            {
+                              $(".item72").attr('style','display: none;');
+                              $(".hidden72").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Robert Allen</td>
+                      <td><input class="hidden72" type="hidden" name="order[quotes][104][active]" value="off">CS</td>
+                      <td>Cutlery Set</td>
+                      <td>Kitchen - Utensils</td>
+                      <td>Each</td>
+                      <td nowrap="">10</td>
+                      <td>0</td>
+                      <td>10</td>
+                      <td><input type="number" name="order[quotes][104][quantity]" class="form-control form-control-sm hidden72" value=""></td>
+                    </tr>
+                    <tr class="item73" style="display:none;">
+                      <script>
+                        $('#object_checkbox73').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item73").attr('style','display: table-row;');
+                              $(".hidden73").val("on");
+                            }
+                            else
+                            {
+                              $(".item73").attr('style','display: none;');
+                              $(".hidden73").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Robert Allen</td>
+                      <td><input class="hidden73" type="hidden" name="order[quotes][94][active]" value="off">SFA</td>
+                      <td>Sofa</td>
+                      <td>Seating</td>
+                      <td>Each</td>
+                      <td nowrap="">0</td>
+                      <td>0</td>
+                      <td>8</td>
+                      <td><input type="number" name="order[quotes][94][quantity]" class="form-control form-control-sm hidden73" value="4"></td>
+                    </tr>
+                    <tr class="item75" style="display:none;">
+                      <script>
+                        $('#object_checkbox75').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item75").attr('style','display: table-row;');
+                              $(".hidden75").val("on");
+                            }
+                            else
+                            {
+                              $(".item75").attr('style','display: none;');
+                              $(".hidden75").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Woodworking Hawaii</td>
+                      <td><input class="hidden75" type="hidden" name="order[quotes][93][active]" value="off">KTBLS</td>
+                      <td>Kona Tables</td>
+                      <td>Tables</td>
+                      <td>Each</td>
+                      <td nowrap="">0</td>
+                      <td>0</td>
+                      <td>57</td>
+                      <td><input type="number" name="order[quotes][93][quantity]" class="form-control form-control-sm hidden75" value="4"></td>
+                    </tr>
+                    <tr class="item76" style="display:none;">
+                      <script>
+                        $('#object_checkbox76').on("change",function(){
+                            checked = $(this).prop("checked");
+                            if (checked == true)
+                            {
+                              $(".item76").attr('style','display: table-row;');
+                              $(".hidden76").val("on");
+                            }
+                            else
+                            {
+                              $(".item76").attr('style','display: none;');
+                              $(".hidden76").val("off");
+                            }
+                        });
+                      </script>
+                      <td>Zenporium</td>
+                      <td><input class="hidden76" type="hidden" name="order[quotes][88][active]" value="off">CBNTS</td>
+                      <td>Cabinets</td>
+                      <td>Casegoods</td>
+                      <td>Each</td>
+                      <td nowrap="">15</td>
+                      <td>0</td>
+                      <td>15</td>
+                      <td><input type="number" name="order[quotes][88][quantity]" class="form-control form-control-sm hidden76" value="10"></td>
+                    </tr>
+              </tbody>
+            </table>
 
-          <label for="request_quote_message">Message</label>
-          <textarea class="form-control mb-3" required="required" name="request_quote[message]" id="request_quote_message">Please review RFQ information and any attachments. Contact us at rfq@modernpo.com with any questions.</textarea>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Send Quote Request" class="btn btn-primary" data-disable-with="Send Quote Request">
-        </div>
-
-</form>    </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+            <input type="submit" name="commit" value="Add to Order" class="btn btn-primary" data-disable-with="Add to Order">
+          </div>
+  </form>    </div>
+    </div>
   </div>
-</div>
+
+  <div class="modal fade" id="requestQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h6 class="modal-title">Request Quote</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <form action="https://modern-po-staging.herokuapp.com/organizations/45/items/request_quote" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="WjstuXA8Bu/e4ncNM2aSOceb51lUWbZ721rqcAGPVuTnHVgiXirUwPx1WabuYhay964DiXrA3ssEDYzpCUocew==">
+          <div class="modal-body">
+            <table class="table table-sm mb-3">
+              <tbody>
+                <tr>
+              		<th nowrap="">Item ID</th>
+              		<th>Item Name</th>
+              		<th>Supplier</th>
+              		<th>Unit Price</th>
+                  <th>Unit</th>
+              		<th width="100">Qty Order</th>
+              	</tr>
+                      <tr class="item115" style="display:none;">
+                        <script>
+                          $('#object_checkbox115').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item115").attr('style','display: table-row;');
+                                $(".hidden115").val("on");
+                              }
+                              else
+                              {
+                                $(".item115").attr('style','display: none;');
+                                $(".hidden115").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden115" type="hidden" name="request_quote[quotes][105][active]" value="off">1000</td>
+                        <td>Aluminum Group - Leather</td>
+                        <td>Herman Miller</td>
+                        <td>$100.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][105][quantity]" class="form-control form-control-sm" ,="" value="50"></td>
+                      </tr>
+                      <tr class="item115" style="display:none;">
+                        <script>
+                          $('#object_checkbox115').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item115").attr('style','display: table-row;');
+                                $(".hidden115").val("on");
+                              }
+                              else
+                              {
+                                $(".item115").attr('style','display: none;');
+                                $(".hidden115").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden115" type="hidden" name="request_quote[quotes][121][active]" value="off">1000</td>
+                        <td>Aluminum Group - Leather</td>
+                        <td>Hive Modern</td>
+                        <td>$150.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][121][quantity]" class="form-control form-control-sm" ,="" value="50"></td>
+                      </tr>
+                      <tr class="item70" style="display:none;">
+                        <script>
+                          $('#object_checkbox70').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item70").attr('style','display: table-row;');
+                                $(".hidden70").val("on");
+                              }
+                              else
+                              {
+                                $(".item70").attr('style','display: none;');
+                                $(".hidden70").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden70" type="hidden" name="request_quote[quotes][98][active]" value="off">BT</td>
+                        <td>Bath Towls </td>
+                        <td>Canvas Home</td>
+                        <td>$100.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][98][quantity]" class="form-control form-control-sm" ,="" value="10"></td>
+                      </tr>
+                      <tr class="item76" style="display:none;">
+                        <script>
+                          $('#object_checkbox76').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item76").attr('style','display: table-row;');
+                                $(".hidden76").val("on");
+                              }
+                              else
+                              {
+                                $(".item76").attr('style','display: none;');
+                                $(".hidden76").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden76" type="hidden" name="request_quote[quotes][88][active]" value="off">CBNTS</td>
+                        <td>Cabinets</td>
+                        <td>Zenporium</td>
+                        <td>$1,234.55</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][88][quantity]" class="form-control form-control-sm" ,="" value="10"></td>
+                      </tr>
+                      <tr class="item68" style="display:none;">
+                        <script>
+                          $('#object_checkbox68').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item68").attr('style','display: table-row;');
+                                $(".hidden68").val("on");
+                              }
+                              else
+                              {
+                                $(".item68").attr('style','display: none;');
+                                $(".hidden68").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden68" type="hidden" name="request_quote[quotes][100][active]" value="off">CC</td>
+                        <td>Cherner Chair</td>
+                        <td>Canvas Home</td>
+                        <td>$0.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][100][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      </tr>
+                      <tr class="item68" style="display:none;">
+                        <script>
+                          $('#object_checkbox68').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item68").attr('style','display: table-row;');
+                                $(".hidden68").val("on");
+                              }
+                              else
+                              {
+                                $(".item68").attr('style','display: none;');
+                                $(".hidden68").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden68" type="hidden" name="request_quote[quotes][89][active]" value="off">CC</td>
+                        <td>Cherner Chair</td>
+                        <td>Design Within Reach</td>
+                        <td>$1,450.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][89][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      </tr>
+                      <tr class="item68" style="display:none;">
+                        <script>
+                          $('#object_checkbox68').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item68").attr('style','display: table-row;');
+                                $(".hidden68").val("on");
+                              }
+                              else
+                              {
+                                $(".item68").attr('style','display: none;');
+                                $(".hidden68").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden68" type="hidden" name="request_quote[quotes][99][active]" value="off">CC</td>
+                        <td>Cherner Chair</td>
+                        <td>Hive Modern</td>
+                        <td>$0.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][99][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      </tr>
+                      <tr class="item68" style="display:none;">
+                        <script>
+                          $('#object_checkbox68').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item68").attr('style','display: table-row;');
+                                $(".hidden68").val("on");
+                              }
+                              else
+                              {
+                                $(".item68").attr('style','display: none;');
+                                $(".hidden68").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden68" type="hidden" name="request_quote[quotes][101][active]" value="off">CC</td>
+                        <td>Cherner Chair</td>
+                        <td>Knoll</td>
+                        <td>$0.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][101][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      </tr>
+                      <tr class="item72" style="display:none;">
+                        <script>
+                          $('#object_checkbox72').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item72").attr('style','display: table-row;');
+                                $(".hidden72").val("on");
+                              }
+                              else
+                              {
+                                $(".item72").attr('style','display: none;');
+                                $(".hidden72").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden72" type="hidden" name="request_quote[quotes][90][active]" value="off">CS</td>
+                        <td>Cutlery Set</td>
+                        <td>Canvas Home</td>
+                        <td>$13.43</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][90][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      </tr>
+                      <tr class="item72" style="display:none;">
+                        <script>
+                          $('#object_checkbox72').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item72").attr('style','display: table-row;');
+                                $(".hidden72").val("on");
+                              }
+                              else
+                              {
+                                $(".item72").attr('style','display: none;');
+                                $(".hidden72").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden72" type="hidden" name="request_quote[quotes][104][active]" value="off">CS</td>
+                        <td>Cutlery Set</td>
+                        <td>Robert Allen</td>
+                        <td>$0.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][104][quantity]" class="form-control form-control-sm" ,="" value=""></td>
+                      </tr>
+                      <tr class="item66" style="display:none;">
+                        <script>
+                          $('#object_checkbox66').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item66").attr('style','display: table-row;');
+                                $(".hidden66").val("on");
+                              }
+                              else
+                              {
+                                $(".item66").attr('style','display: none;');
+                                $(".hidden66").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden66" type="hidden" name="request_quote[quotes][91][active]" value="off">EAC</td>
+                        <td>Eames Aluminum Chair</td>
+                        <td>Herman Miller</td>
+                        <td>$1,350.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][91][quantity]" class="form-control form-control-sm" ,="" value="5"></td>
+                      </tr>
+                      <tr class="item74" style="display:none;">
+                        <script>
+                          $('#object_checkbox74').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item74").attr('style','display: table-row;');
+                                $(".hidden74").val("on");
+                              }
+                              else
+                              {
+                                $(".item74").attr('style','display: none;');
+                                $(".hidden74").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden74" type="hidden" name="request_quote[quotes][92][active]" value="off">HM</td>
+                        <td>Hall Mirrors</td>
+                        <td>Dixon</td>
+                        <td>$450.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][92][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      </tr>
+                      <tr class="item75" style="display:none;">
+                        <script>
+                          $('#object_checkbox75').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item75").attr('style','display: table-row;');
+                                $(".hidden75").val("on");
+                              }
+                              else
+                              {
+                                $(".item75").attr('style','display: none;');
+                                $(".hidden75").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden75" type="hidden" name="request_quote[quotes][93][active]" value="off">KTBLS</td>
+                        <td>Kona Tables</td>
+                        <td>Woodworking Hawaii</td>
+                        <td>$580.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][93][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      </tr>
+                      <tr class="item163" style="display:none;">
+                        <script>
+                          $('#object_checkbox163').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item163").attr('style','display: table-row;');
+                                $(".hidden163").val("on");
+                              }
+                              else
+                              {
+                                $(".item163").attr('style','display: none;');
+                                $(".hidden163").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden163" type="hidden" name="request_quote[quotes][114][active]" value="off">Seating100</td>
+                        <td>George Nelson Sofa</td>
+                        <td>Herman Miller</td>
+                        <td>$1,000.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][114][quantity]" class="form-control form-control-sm" ,="" value=""></td>
+                      </tr>
+                      <tr class="item73" style="display:none;">
+                        <script>
+                          $('#object_checkbox73').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item73").attr('style','display: table-row;');
+                                $(".hidden73").val("on");
+                              }
+                              else
+                              {
+                                $(".item73").attr('style','display: none;');
+                                $(".hidden73").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden73" type="hidden" name="request_quote[quotes][94][active]" value="off">SFA</td>
+                        <td>Sofa</td>
+                        <td>Robert Allen</td>
+                        <td>$650.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][94][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      </tr>
+                      <tr class="item67" style="display:none;">
+                        <script>
+                          $('#object_checkbox67').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item67").attr('style','display: table-row;');
+                                $(".hidden67").val("on");
+                              }
+                              else
+                              {
+                                $(".item67").attr('style','display: none;');
+                                $(".hidden67").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden67" type="hidden" name="request_quote[quotes][95][active]" value="off">ST</td>
+                        <td>Saarinen Table</td>
+                        <td>Knoll</td>
+                        <td>$2,100.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][95][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      </tr>
+                      <tr class="item71" style="display:none;">
+                        <script>
+                          $('#object_checkbox71').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item71").attr('style','display: table-row;');
+                                $(".hidden71").val("on");
+                              }
+                              else
+                              {
+                                $(".item71").attr('style','display: none;');
+                                $(".hidden71").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden71" type="hidden" name="request_quote[quotes][96][active]" value="off">TBLS</td>
+                        <td>Tables</td>
+                        <td>Hive Modern</td>
+                        <td>$1,234.55</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][96][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      </tr>
+                      <tr class="item69" style="display:none;">
+                        <script>
+                          $('#object_checkbox69').on("change",function(){
+                              checked = $(this).prop("checked");
+                              if (checked == true)
+                              {
+                                $(".item69").attr('style','display: table-row;');
+                                $(".hidden69").val("on");
+                              }
+                              else
+                              {
+                                $(".item69").attr('style','display: none;');
+                                $(".hidden69").val("off");
+                              }
+                          });
+                        </script>
+                        <td><input class="hidden69" type="hidden" name="request_quote[quotes][97][active]" value="off">TL</td>
+                        <td>Tolomeo Lamp</td>
+                        <td>Artemide</td>
+                        <td>$1,120.00</td>
+                        <td>Each</td>
+                        <td><input type="number" name="request_quote[quotes][97][quantity]" class="form-control form-control-sm" ,="" value="4"></td>
+                      </tr>
+              </tbody>
+            </table>
+
+            <label for="request_quote_message">Message</label>
+            <textarea class="form-control mb-3" required="required" name="request_quote[message]" id="request_quote_message">Please review RFQ information and any attachments. Contact us at rfq@modernpo.com with any questions.</textarea>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+            <input type="submit" name="commit" value="Send Quote Request" class="btn btn-primary" data-disable-with="Send Quote Request">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ItemDownload" tabindex="-1" role="dialog" aria-labelledby="ShipmentModalLabel" aria-modal="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h6 class="modal-title">Item Download</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+              Item Summary
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckChecked">
+              Item Documents (PDF)
+            </label>
+          </div>
+
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+            <input type="submit" name="commit" value="Download" class="btn btn-primary" data-disable-with="Save Shipping">
+          </div>
 
       </div>
+    </div>
+  </div>
+</div>
 
       <div class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom">
         <div class="container">
@@ -1458,6 +1494,7 @@
         </div>
       </div>
 
+      <hr>
 
 
 
