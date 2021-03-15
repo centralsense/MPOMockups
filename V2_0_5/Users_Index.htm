@@ -103,127 +103,328 @@
       <div class="container main" style="margin-bottom: 40px; padding-bottom: 30px;">
 
         <form class="form-inline mb-2" id="search">
-	<input type="hidden" name="filter" value="">
-	<input type="hidden" name="sort" value="Name">
-	<div class="col-sm-4 p-0 input-group mb-2 mr-2">
-			<input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm" autofocus="autofocus">
-			<div class="input-group-append">
-				<button class="btn btn-sm btn-outline-secondary" type="button" id="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</div>
-	</div>
-		<div class="ml-auto mb-2">
+        	<input type="hidden" name="filter" value="">
+        	<input type="hidden" name="sort" value="Name">
+        	<div class="col-sm-4 p-0 input-group mb-2 mr-2">
+        			<input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm" autofocus="autofocus">
+        			<div class="input-group-append">
+        				<button class="btn btn-sm btn-outline-secondary" type="button" id="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        			</div>
+        	</div>
+      		<div class="ml-auto mb-2">
 
-			<a class="btn btn-sm btn-primary" data-target="#editSystemUser" data-turbolinks="false" data-toggle="modal" href="https://modern-po-staging.herokuapp.com/organizations/45/users#">New User</a>
-		</div>
-</form>
+      			<a class="btn btn-sm btn-primary" data-target="#editSystemUser" data-turbolinks="false" data-toggle="modal" href="https://modern-po-staging.herokuapp.com/organizations/45/users#">New User</a>
+      		</div>
+        </form>
 
-<div class="card mb-3">
-		<div class="card-header d-flex p-2">
-				<ul class="nav nav-pills">
-					<li class="nav-item">
-						<a class="nav-link active" href="https://modern-po-staging.herokuapp.com/organizations/45/users?search=&amp;sort=Name">All</a>
-					</li>
-						<li class="nav-item">
-							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=Viewers&amp;search=&amp;sort=Name">Viewers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=Editors&amp;search=&amp;sort=Name">Editors</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=Administrators&amp;search=&amp;sort=Name">Administrators</a>
-						</li>
-				</ul>
-				<button type="button" class="btn btn-sm btn-white dropleft ml-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				 Sort	&nbsp;<span class="sr-only">Toggle Dropdown</span><i class="fa fa-angle-down" aria-hidden="true"></i>
-				</button>
-				<div class="dropdown-menu">
-						<a class="dropdown-item sort small active" href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=&amp;search=&amp;sort=Name">Name</a>
-						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=&amp;search=&amp;sort=Email">Email</a>
-						<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=&amp;search=&amp;sort=Access%20Level">Access Level</a>
-				</div>
-		</div>
+        <div class="card mb-3">
+        	<div class="card-header d-flex p-2">
+        			<ul class="nav nav-pills">
+        				<li class="nav-item">
+        					<a class="nav-link active" href="https://modern-po-staging.herokuapp.com/organizations/45/users?search=&amp;sort=Name">All</a>
+        				</li>
+        					<li class="nav-item">
+        						<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=Viewers&amp;search=&amp;sort=Name">Viewers</a>
+        					</li>
+        					<li class="nav-item">
+        						<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=Editors&amp;search=&amp;sort=Name">Editors</a>
+        					</li>
+        					<li class="nav-item">
+        						<a class="nav-link filter " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=Administrators&amp;search=&amp;sort=Name">Administrators</a>
+        					</li>
+        			</ul>
+        			<button type="button" class="btn btn-sm btn-white dropleft ml-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        			 Sort	&nbsp;<span class="sr-only">Toggle Dropdown</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+        			</button>
+        			<div class="dropdown-menu">
+        					<a class="dropdown-item sort small active" href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=&amp;search=&amp;sort=Name">Name</a>
+        					<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=&amp;search=&amp;sort=Email">Email</a>
+        					<a class="dropdown-item sort small " href="https://modern-po-staging.herokuapp.com/organizations/45/users?filter=&amp;search=&amp;sort=Access%20Level">Access Level</a>
+        			</div>
+        	</div>
 
-	<div class="table-responsive">
-		<table class="table">
-			<thead>
-				<tr>
-  			   <th scope="col">Email</th>
-  			   <th scope="col">User Name</th>
-  			   <th scope="col">Access Level</th>
-  			   <th scope="col"></th>
-				</tr>
-			</thead>
-			<tbody>
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">polo+1@modernpo.com</a></td>
-    <td>Apolonio Valdovinos</td>
-    <td>Owner</td>
-      <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser65" id="deleteRow65"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+        	<div class="table-responsive">
+        		<table class="table">
+        			<thead>
+        				<tr>
+          			   <th scope="col">Email</th>
+          			   <th scope="col">User Name</th>
+          			   <th scope="col">Access Level</th>
+          			   <th scope="col"></th>
+        				</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">polo+1@modernpo.com</a></td>
+                  <td>Apolonio Valdovinos</td>
+                  <td>Owner</td>
+                    <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser65" id="deleteRow65"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">demo+av@modernpo.com</a></td>
+                  <td>Polo Valdovinos<a class="btn btn-sm btn-light" href="https://modern-po-staging.herokuapp.com/organizations/45/users/74/resend"><span class="translation_missing" title="translation missing: en.links.resend">Resend</span></a></td>
+                  <td>Administrator</td>
+                    <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser74" id="deleteRow74"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">polo+maggie@modernpo.com</a></td>
+                  <td>Maggie Franklin<a class="btn btn-sm btn-light" href="https://modern-po-staging.herokuapp.com/organizations/45/users/91/resend"><span class="translation_missing" title="translation missing: en.links.resend">Resend</span></a></td>
+                  <td>Viewer</td>
+                    <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser91" id="deleteRow91"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">polo+v203test@modernpo.com</a></td>
+                  <td>Polo 2</td>
+                  <td>Administrator</td>
+                    <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser101" id="deleteRow101"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">polo+v203test2@modernpo.com</a></td>
+                  <td>It works</td>
+                  <td>Administrator</td>
+                    <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser102" id="deleteRow102"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">destiney@centralsense.com</a></td>
+                  <td>Destiney Yenchay</td>
+                  <td>Administrator</td>
+                    <td></td>
+                </tr>
+        				<tr>
+                  <td><a data-target="#editSystemUser65" data-turbolinks="false" data-toggle="modal" href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm#">polo+client@modernpo.com</a></td>
+                  <td><a class="btn btn-sm btn-light" href="https://modern-po-staging.herokuapp.com/organizations/45/users/108/resend"><span class="translation_missing" title="translation missing: en.links.resend">Resend</span></a></td>
+                  <td>Viewer</td>
+                    <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser108" id="deleteRow108"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                </tr>
+        			</tbody>
+        		</table>
+        	</div>
 
-</tr>
+        	<div class="card-footer py-1">
 
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">demo+av@modernpo.com</a></td>
-    <td>Polo Valdovinos<a class="btn btn-sm btn-light" href="https://modern-po-staging.herokuapp.com/organizations/45/users/74/resend"><span class="translation_missing" title="translation missing: en.links.resend">Resend</span></a></td>
-    <td>Administrator</td>
-      <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser74" id="deleteRow74"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+         <br>
 
-</tr>
+        	</div>
+        </div>
 
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">polo+maggie@modernpo.com</a></td>
-    <td>Maggie Franklin<a class="btn btn-sm btn-light" href="https://modern-po-staging.herokuapp.com/organizations/45/users/91/resend"><span class="translation_missing" title="translation missing: en.links.resend">Resend</span></a></td>
-    <td>Viewer</td>
-      <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser91" id="deleteRow91"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+        <div class="modal fade" id="editSystemUser65" tabindex="-1" role="dialog" aria-labelledby="SystemUser65ModalLabel" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
 
-</tr>
+              <div class="modal-header">
+                <h6 class="modal-title">User</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form class="edit_budget" id="edit_budget_48" action="/organizations/45/budgets/48" accept-charset="UTF-8" method="post">
+                <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="nW8oLil/r0ElurLzwm46bz8PSKJG7Cx5KxOjHUHiHrxpfqg9E+aN8MpUPmYQPiObvmtblNFnTHJ6YVk14PMQXg==">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6><span class="translation_missing" title="translation missing: en.Project">User</span></h6>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="row mb-2">
+                        <div class="col">
 
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">polo+v203test@modernpo.com</a></td>
-    <td>Polo 2</td>
-    <td>Administrator</td>
-      <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser101" id="deleteRow101"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                          <label for="budget_name">First and Last Name</label>
+                          <input class="form-control form-control-sm mb-2" required="required" type="text" value="Hilltop Marriott" name="budget[name]" id="budget_name">
 
-</tr>
+                          <label for="system_user_user_attributes_email">Email</label>
+                          <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+1@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
 
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">polo+v203test2@modernpo.com</a></td>
-    <td>It works</td>
-    <td>Administrator</td>
-      <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser102" id="deleteRow102"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                        </div>
 
-</tr>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6><span class="translation_missing" title="translation missing: en.Terms and Conditions">Clients</span></h6>
+                    </div>
+                    <div class="col-sm-9">
+                      <label for="system_po_bill_to_contact_id">Client Name</label>
+                      <select class="form-control form-control-sm mb-2" name="system[po_bill_to_contact_id]" id="system_po_bill_to_contact_id">
+                        <option value="">0001 - W Hotel</option>
+                        <option value="166">0002 - Palm Springs</option>
+                        <option value="166">0003 - Palm Springs</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6><span class="translation_missing" title="translation missing: en.Terms and Conditions">Access Level</span></h6>
+                    </div>
+                    <div class="col-sm-9">
 
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">destiney@centralsense.com</a></td>
-    <td>Destiney Yenchay</td>
-    <td>Administrator</td>
-      <td></td>
-</tr>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
+                        <label class="form-check-label text-dark" for="flexRadioDefault1">
+                          Administrator
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label text-dark" for="flexRadioDefault1">
+                          Editor
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label text-dark" for="flexRadioDefault2">
+                          Viewer
+                        </label>
+                      </div>
 
-						<tr>
-    <td><a href="https://centralsense.github.io/MPOMockups/V2_0_5/Users_Edit.htm">polo+client@modernpo.com</a></td>
-    <td><a class="btn btn-sm btn-light" href="https://modern-po-staging.herokuapp.com/organizations/45/users/108/resend"><span class="translation_missing" title="translation missing: en.links.resend">Resend</span></a></td>
-    <td>Viewer</td>
-      <td class="text-right"><a class="btn btn-sm btn-light text-muted" href="https://modern-po-staging.herokuapp.com/organizations/45/users#" data-turbolinks="false" data-toggle="modal" data-target="#deleteSystemUser108" id="deleteRow108"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer d-flex align-items-start">
+                  <input type="submit" name="commit" value="Save Users" class="btn btn-primary ml-auto" data-disable-with="Save Users">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
-</tr>
+        <div class="modal fade" id="deleteSystemUser65" tabindex="-1" role="dialog" aria-labelledby="deleteUser65ModalLabel" aria-hidden="true">
+        	  <div class="modal-dialog modal-md">
+        	    <div class="modal-content">
 
-			</tbody>
-		</table>
-	</div>
+        	      <div class="modal-header">
+        	        <h6 class="modal-title">Delete User</h6>
+        	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	          <span aria-hidden="true">×</span>
+        	        </button>
+        	      </div>
+                <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/65" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+          	      <div class="modal-body">
+                    You have selected to delete
+        							<strong>Apolonio Valdovinos</strong>
+        						User.
+                    <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
+          	      </div>
+          	      <div class="modal-footer">
+          	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
+          	      </div>
+            </form>
+            </div>
+        	  </div>
+        	</div>
 
-	<div class="card-footer py-1">
+        <div class="modal fade" id="editSystemUser74" tabindex="-1" role="dialog" aria-labelledby="SystemUser74ModalLabel" aria-modal="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h6 class="modal-title">User</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form class="edit_system_user" id="edit_system_user_74" action="https://modern-po-staging.herokuapp.com/organizations/45/users/74" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+        	      <div class="modal-body">
+                  <label for="system_user_user_attributes_email">Email</label>
+                  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="demo+av@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
+                  <input type="hidden" value="67" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
+                  <label for="system_user_access_level">Access level</label>
+                  <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
+                  <option value="2">Editor</option>
+                  <option value="1">Viewer</option></select>
+        	      </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                  <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
- <br>
+        <div class="modal fade" id="deleteSystemUser74" tabindex="-1" role="dialog" aria-labelledby="deleteUser74ModalLabel" aria-hidden="true">
+        	  <div class="modal-dialog modal-md">
+        	    <div class="modal-content">
+        	      <div class="modal-header">
+        	        <h6 class="modal-title">Delete User</h6>
+        	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	          <span aria-hidden="true">×</span>
+        	        </button>
+        	      </div>
+                <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/74" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+          	      <div class="modal-body">
+                    You have selected to delete
+        							<strong>Polo Valdovinos</strong>
+        						User.
+                    <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
+          	      </div>
+          	      <div class="modal-footer">
+          	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
+          	      </div>
+                </form>
+              </div>
+        	  </div>
+        	</div>
 
-	</div>
-</div>
+        <div class="modal fade" id="editSystemUser91" tabindex="-1" role="dialog" aria-labelledby="SystemUser91ModalLabel" aria-modal="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
 
+              <div class="modal-header">
+                <h6 class="modal-title">User</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form class="edit_system_user" id="edit_system_user_91" action="https://modern-po-staging.herokuapp.com/organizations/45/users/91" accept-charset="UTF-8" method="post">
+                <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+        	      <div class="modal-body">
+                  <label for="system_user_user_attributes_email">Email</label>
+                  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+maggie@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
+                  <input type="hidden" value="81" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
+                  <label for="system_user_access_level">Access level</label>
+                  <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
+                  <option value="2">Editor</option>
+                  <option selected="selected" value="1">Viewer</option></select>
+        	      </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                  <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
+        <div class="modal fade" id="deleteSystemUser91" tabindex="-1" role="dialog" aria-labelledby="deleteUser91ModalLabel" aria-hidden="true">
+        	  <div class="modal-dialog modal-md">
+        	    <div class="modal-content">
+        	      <div class="modal-header">
+        	        <h6 class="modal-title">Delete User</h6>
+        	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	          <span aria-hidden="true">×</span>
+        	        </button>
+        	      </div>
+                <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/91" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+          	      <div class="modal-body">
+                    You have selected to delete
+        							<strong>Maggie Franklin</strong>
+        						User.
+                    <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
+          	      </div>
+          	      <div class="modal-footer">
+          	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
+          	      </div>
+                </form>
+              </div>
+        	  </div>
+        	</div>
 
-
-<div class="modal fade" id="editSystemUser65" tabindex="-1" role="dialog" aria-labelledby="SystemUser65ModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal fade" id="editSystemUser101" tabindex="-1" role="dialog" aria-labelledby="SystemUser101ModalLabel" aria-modal="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
 
@@ -233,28 +434,27 @@
           <span aria-hidden="true">×</span>
         </button>
       </div>
-      <form class="edit_system_user" id="edit_system_user_65" action="https://modern-po-staging.herokuapp.com/organizations/45/users/65" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+      <form class="edit_system_user" id="edit_system_user_101" action="https://modern-po-staging.herokuapp.com/organizations/45/users/101" accept-charset="UTF-8" method="post">
+        <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
 	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+1@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="60" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
-<option value="2">Editor</option>
-<option selected="selected" value="1">Viewer</option></select>
-
+          <label for="system_user_user_attributes_email">Email</label>
+          <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+v203test@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
+          <input type="hidden" value="86" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
+          <label for="system_user_access_level">Access level</label>
+          <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
+          <option value="2">Editor</option>
+          <option value="1">Viewer</option></select>
 	      </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
           <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
         </div>
-</form>    </div>
+      </form>
+    </div>
   </div>
 </div>
 
-  <div class="modal fade" id="deleteSystemUser65" tabindex="-1" role="dialog" aria-labelledby="deleteUser65ModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteSystemUser101" tabindex="-1" role="dialog" aria-labelledby="deleteUser101ModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-md">
 	    <div class="modal-content">
 
@@ -264,178 +464,8 @@
 	          <span aria-hidden="true">×</span>
 	        </button>
 	      </div>
-        <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/65" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-  	      <div class="modal-body">
-            You have selected to delete
-							<strong>Apolonio Valdovinos</strong>
-						User.
-            <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
-  	      </div>
-  	      <div class="modal-footer">
-  	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-            <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
-  	      </div>
-</form>	    </div>
-	  </div>
-	</div>
-
-
-<div class="modal fade" id="editSystemUser74" tabindex="-1" role="dialog" aria-labelledby="SystemUser74ModalLabel" aria-modal="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h6 class="modal-title">User</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <form class="edit_system_user" id="edit_system_user_74" action="https://modern-po-staging.herokuapp.com/organizations/45/users/74" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="demo+av@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="67" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
-<option value="2">Editor</option>
-<option value="1">Viewer</option></select>
-
-	      </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
-        </div>
-</form>    </div>
-  </div>
-</div>
-
-  <div class="modal fade" id="deleteSystemUser74" tabindex="-1" role="dialog" aria-labelledby="deleteUser74ModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-md">
-	    <div class="modal-content">
-
-	      <div class="modal-header">
-	        <h6 class="modal-title">Delete User</h6>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">×</span>
-	        </button>
-	      </div>
-        <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/74" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-  	      <div class="modal-body">
-            You have selected to delete
-							<strong>Polo Valdovinos</strong>
-						User.
-            <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
-  	      </div>
-  	      <div class="modal-footer">
-  	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-            <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
-  	      </div>
-</form>	    </div>
-	  </div>
-	</div>
-
-
-<div class="modal fade" id="editSystemUser91" tabindex="-1" role="dialog" aria-labelledby="SystemUser91ModalLabel" aria-modal="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h6 class="modal-title">User</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <form class="edit_system_user" id="edit_system_user_91" action="https://modern-po-staging.herokuapp.com/organizations/45/users/91" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+maggie@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="81" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
-<option value="2">Editor</option>
-<option selected="selected" value="1">Viewer</option></select>
-
-	      </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
-        </div>
-</form>    </div>
-  </div>
-</div>
-
-  <div class="modal fade" id="deleteSystemUser91" tabindex="-1" role="dialog" aria-labelledby="deleteUser91ModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-md">
-	    <div class="modal-content">
-
-	      <div class="modal-header">
-	        <h6 class="modal-title">Delete User</h6>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">×</span>
-	        </button>
-	      </div>
-        <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/91" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-  	      <div class="modal-body">
-            You have selected to delete
-							<strong>Maggie Franklin</strong>
-						User.
-            <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
-  	      </div>
-  	      <div class="modal-footer">
-  	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-            <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
-  	      </div>
-</form>	    </div>
-	  </div>
-	</div>
-
-
-<div class="modal fade" id="editSystemUser101" tabindex="-1" role="dialog" aria-labelledby="SystemUser101ModalLabel" aria-modal="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h6 class="modal-title">User</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <form class="edit_system_user" id="edit_system_user_101" action="https://modern-po-staging.herokuapp.com/organizations/45/users/101" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+v203test@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="86" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
-<option value="2">Editor</option>
-<option value="1">Viewer</option></select>
-
-	      </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
-        </div>
-</form>    </div>
-  </div>
-</div>
-
-  <div class="modal fade" id="deleteSystemUser101" tabindex="-1" role="dialog" aria-labelledby="deleteUser101ModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-md">
-	    <div class="modal-content">
-
-	      <div class="modal-header">
-	        <h6 class="modal-title">Delete User</h6>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">×</span>
-	        </button>
-	      </div>
-        <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/101" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+        <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/101" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete">
+          <input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
   	      <div class="modal-body">
             You have selected to delete
 							<strong>Polo 2</strong>
@@ -446,102 +476,99 @@
   	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
             <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
   	      </div>
-</form>	    </div>
+        </form>
+      </div>
 	  </div>
 	</div>
 
+        <div class="modal fade" id="editSystemUser102" tabindex="-1" role="dialog" aria-labelledby="SystemUser102ModalLabel" aria-modal="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
 
-<div class="modal fade" id="editSystemUser102" tabindex="-1" role="dialog" aria-labelledby="SystemUser102ModalLabel" aria-modal="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h6 class="modal-title">User</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <form class="edit_system_user" id="edit_system_user_102" action="https://modern-po-staging.herokuapp.com/organizations/45/users/102" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+v203test2@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="87" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
-<option value="2">Editor</option>
-<option value="1">Viewer</option></select>
-
-	      </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
+              <div class="modal-header">
+                <h6 class="modal-title">User</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form class="edit_system_user" id="edit_system_user_102" action="https://modern-po-staging.herokuapp.com/organizations/45/users/102" accept-charset="UTF-8" method="post">
+                <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+        	      <div class="modal-body">
+                  <label for="system_user_user_attributes_email">Email</label>
+                  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+v203test2@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
+                  <input type="hidden" value="87" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
+                  <label for="system_user_access_level">Access level</label>
+                  <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
+                  <option value="2">Editor</option>
+                  <option value="1">Viewer</option></select>
+        	      </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                  <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-</form>    </div>
-  </div>
-</div>
 
-  <div class="modal fade" id="deleteSystemUser102" tabindex="-1" role="dialog" aria-labelledby="deleteUser102ModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-md">
-	    <div class="modal-content">
+        <div class="modal fade" id="deleteSystemUser102" tabindex="-1" role="dialog" aria-labelledby="deleteUser102ModalLabel" aria-hidden="true">
+        	  <div class="modal-dialog modal-md">
+        	    <div class="modal-content">
 
-	      <div class="modal-header">
-	        <h6 class="modal-title">Delete User</h6>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">×</span>
-	        </button>
-	      </div>
-        <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/102" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-  	      <div class="modal-body">
-            You have selected to delete
-							<strong>It works</strong>
-						User.
-            <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
-  	      </div>
-  	      <div class="modal-footer">
-  	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-            <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
-  	      </div>
-</form>	    </div>
-	  </div>
-	</div>
+        	      <div class="modal-header">
+        	        <h6 class="modal-title">Delete User</h6>
+        	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        	          <span aria-hidden="true">×</span>
+        	        </button>
+        	      </div>
+                <form action="https://modern-po-staging.herokuapp.com/organizations/45/users/102" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="delete">
+                  <input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+          	      <div class="modal-body">
+                    You have selected to delete
+        							<strong>It works</strong>
+        						User.
+                    <textarea class="form-control form-control-sm mt-3 mb-2" placeholder="Message" required="required" name="delete[reason]" id="delete_reason"></textarea>
+          	      </div>
+          	      <div class="modal-footer">
+          	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
+          	      </div>
+                </form>
+              </div>
+        	  </div>
+        	</div>
 
+        <div class="modal fade" id="editSystemUser107" tabindex="-1" role="dialog" aria-labelledby="SystemUser107ModalLabel" aria-modal="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
 
-<div class="modal fade" id="editSystemUser107" tabindex="-1" role="dialog" aria-labelledby="SystemUser107ModalLabel" aria-modal="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h6 class="modal-title">User</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <form class="edit_system_user" id="edit_system_user_107" action="https://modern-po-staging.herokuapp.com/organizations/45/users/107" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
-	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="destiney@centralsense.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="91" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
-<option value="2">Editor</option>
-<option value="1">Viewer</option></select>
-
-	      </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-          <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
+              <div class="modal-header">
+                <h6 class="modal-title">User</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <form class="edit_system_user" id="edit_system_user_107" action="https://modern-po-staging.herokuapp.com/organizations/45/users/107" accept-charset="UTF-8" method="post">
+                <input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
+        	      <div class="modal-body">
+                  <label for="system_user_user_attributes_email">Email</label>
+                  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="destiney@centralsense.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
+                  <input type="hidden" value="91" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
+                  <label for="system_user_access_level">Access level</label>
+                  <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option selected="selected" value="3">Administrator</option>
+                  <option value="2">Editor</option>
+                  <option value="1">Viewer</option></select>
+        	      </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                  <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-</form>    </div>
-  </div>
-</div>
 
-
-
-<div class="modal fade" id="editSystemUser108" tabindex="-1" role="dialog" aria-labelledby="SystemUser108ModalLabel" aria-modal="true">
+        <div class="modal fade" id="editSystemUser108" tabindex="-1" role="dialog" aria-labelledby="SystemUser108ModalLabel" aria-modal="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
 
@@ -553,26 +580,24 @@
       </div>
       <form class="edit_system_user" id="edit_system_user_108" action="https://modern-po-staging.herokuapp.com/organizations/45/users/108" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
 	      <div class="modal-body">
-
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+client@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-<input type="hidden" value="92" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
-<option value="2">Editor</option>
-<option selected="selected" value="1">Viewer</option></select>
-
+          <label for="system_user_user_attributes_email">Email</label>
+          <input class="form-control form-control-sm mb-3" disabled="disabled" required="required" type="email" value="polo+client@modernpo.com" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
+          <input type="hidden" value="92" name="system_user[user_attributes][id]" id="system_user_user_attributes_id">
+          <label for="system_user_access_level">Access level</label>
+          <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
+          <option value="2">Editor</option>
+          <option selected="selected" value="1">Viewer</option></select>
 	      </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
           <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
         </div>
-</form>    </div>
+      </form>
+    </div>
   </div>
 </div>
 
-  <div class="modal fade" id="deleteSystemUser108" tabindex="-1" role="dialog" aria-labelledby="deleteUser108ModalLabel" aria-hidden="true">
+        <div class="modal fade" id="deleteSystemUser108" tabindex="-1" role="dialog" aria-labelledby="deleteUser108ModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-md">
 	    <div class="modal-content">
 
@@ -593,12 +618,14 @@
   	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
             <input type="submit" name="commit" value="Delete" class="btn btn-primary" id="deleteSubmit" data-disable-with="Delete">
   	      </div>
-</form>	    </div>
+        </form>
+      </div>
 	  </div>
 	</div>
 
 
-<div class="modal fade" id="editSystemUser" tabindex="-1" role="dialog" aria-labelledby="SystemUserModalLabel" aria-modal="true">
+
+        <div class="modal fade" id="editSystemUser" tabindex="-1" role="dialog" aria-labelledby="SystemUserModalLabel" aria-modal="true">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
 
@@ -610,25 +637,22 @@
       </div>
       <form class="new_system_user" id="new_system_user" action="https://modern-po-staging.herokuapp.com/organizations/45/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="gotlnvv1LgBfymoZG9qM1UfhkvDQzWWxB4veRsFNiHB2muWNwWwMsbAk5ozJipUhxoWBxkdGBbpW+SRuYFyGkg==">
 	      <div class="modal-body">
+          <label for="system_user_user_attributes_email">Email</label>
+          <input class="form-control form-control-sm mb-3" required="required" type="email" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
 
-
-  <label for="system_user_user_attributes_email">Email</label>
-  <input class="form-control form-control-sm mb-3" required="required" type="email" name="system_user[user_attributes][email]" id="system_user_user_attributes_email">
-
-<label for="system_user_access_level">Access level</label>
-<select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
-<option value="2">Editor</option>
-<option value="1">Viewer</option></select>
-
+          <label for="system_user_access_level">Access level</label>
+          <select class="form-control" name="system_user[access_level]" id="system_user_access_level"><option value="3">Administrator</option>
+          <option value="2">Editor</option>
+          <option value="1">Viewer</option></select>
 	      </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
           <input type="submit" name="commit" value="Save User" class="btn btn-primary" data-disable-with="Save User">
         </div>
-</form>    </div>
+      </form>
+    </div>
   </div>
 </div>
-
 
       </div>
 
